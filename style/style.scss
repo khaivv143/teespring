@@ -52,15 +52,36 @@ body {
 }
 
 header {
+    position: relative;
+    z-index: 9999;
+
     .logo {
+        display: flex;
+
         a {
             display: block;
-            padding: 1rem 2rem 1rem 0;
+            padding: 1rem .5rem 1rem 0;
             height: 4rem;
 
             img {
                 height: 28px;
                 width: auto;
+            }
+
+            &.btn-menu-mobile {
+                font-size: 14px;
+                display: flex;
+                align-items: center;
+
+                i {
+                    color: #272727;
+                    transition: .3s;
+                }
+                &.change-close{
+                    i{
+                        transform: rotate(-180deg);
+                    }
+                }
             }
         }
     }
@@ -88,6 +109,45 @@ header {
                 a {
                     color: #ee2761;
                     font-weight: bold;
+                }
+            }
+        }
+    }
+
+    .menu-mobile {
+        position: absolute;
+        @extend cleanUL;
+        background: #fff;
+        top: 100%;
+        left: -5px;
+        width: calc(100% + 10px);
+        display: none;
+
+        li {
+            display: block;
+            width: 100%;
+
+            a {
+                @extend cleanA;
+                display: block;
+                padding: .5rem;
+                cursor: pointer;
+                color: #0a0918;
+                border-bottom: 1px solid #dee2e6;
+                text-align: center;
+                font-size: 14px;
+            }
+
+            &.current {
+                a {
+                    color: #ee2761;
+                    font-weight: bold;
+                }
+            }
+
+            &:last-child {
+                a {
+                    border: 0;
                 }
             }
         }
@@ -122,9 +182,10 @@ nav {
 }
 
 #homepage-one {
-    background-image: url(../images/E4TgtTi.png) !important;
+    background: url(../images/E4TgtTi.png) top !important;
     background-size: cover;
     padding: 0 90px;
+    margin-bottom: 50px;
 
     .page-content {
         padding: 150px 0;
@@ -157,7 +218,6 @@ nav {
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
-    margin-top: 50px;
     padding: 0 90px;
 
     .page-content {
@@ -429,8 +489,8 @@ footer {
     background: #282562;
     padding: 50px 0 30px;
     margin-top: 50px;
-    
-    .footer-nav{
+
+    .footer-nav {
         margin-bottom: 40px;
     }
 
@@ -445,7 +505,8 @@ footer {
                 @extend cleanA;
                 color: #fff;
                 opacity: .9;
-                &:hover{
+
+                &:hover {
                     opacity: .5;
                     color: #fff;
                     text-decoration: none;
@@ -467,45 +528,54 @@ footer {
             }
         }
     }
-    
-    .switcher-language{
+
+    .switcher-language {
         text-align: right;
-        select{
-            border: 1px solid rgba(232,236,237,0.7);
+
+        select {
+            border: 1px solid rgba(232, 236, 237, 0.7);
             height: 40px;
             background: #282562;
             color: #fff;
             opacity: .9;
             width: 120px;
             outline: none;
-            &focus{
+
+            &focus {
                 box-shadow: none;
             }
         }
     }
-    
-    p{
-        &.copyright{
+
+    p {
+        &.copyright {
             color: #fff;
             opacity: .9;
         }
     }
-    
-    .social{
-        ul{
+
+    .social {
+        ul {
             @extend cleanUL;
             text-align: right;
-            li{
+
+            li {
                 padding-right: 1rem;
-                a{
+
+                a {
                     text-decoration: none;
                     color: #fff;
                     opacity: .6;
-                    &:hover{
+
+                    &:hover {
                         opacity: 1;
                     }
                 }
             }
         }
+    }
+
+    .m-help {
+        display: none;
     }
 }

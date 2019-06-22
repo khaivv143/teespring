@@ -1,0 +1,219 @@
+@media screen and (max-width: 992px) {
+  /* line 3, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  .container-fluid,
+  nav {
+    padding-left: 0;
+    padding-right: 0; } }
+
+@media screen and (max-width: 768px) {
+  /* line 12, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  .col,
+  .col-1,
+  .col-10,
+  .col-11,
+  .col-12,
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6,
+  .col-7,
+  .col-8,
+  .col-9,
+  .col-auto,
+  .col-lg,
+  .col-lg-1,
+  .col-lg-10,
+  .col-lg-11,
+  .col-lg-12,
+  .col-lg-2,
+  .col-lg-3,
+  .col-lg-4,
+  .col-lg-5,
+  .col-lg-6,
+  .col-lg-7,
+  .col-lg-8,
+  .col-lg-9,
+  .col-lg-auto,
+  .col-md,
+  .col-md-1,
+  .col-md-10,
+  .col-md-11,
+  .col-md-12,
+  .col-md-2,
+  .col-md-3,
+  .col-md-4,
+  .col-md-5,
+  .col-md-6,
+  .col-md-7,
+  .col-md-8,
+  .col-md-9,
+  .col-md-auto,
+  .col-sm,
+  .col-sm-1,
+  .col-sm-10,
+  .col-sm-11,
+  .col-sm-12,
+  .col-sm-2,
+  .col-sm-3,
+  .col-sm-4,
+  .col-sm-5,
+  .col-sm-6,
+  .col-sm-7,
+  .col-sm-8,
+  .col-sm-9,
+  .col-sm-auto,
+  .col-xl,
+  .col-xl-1,
+  .col-xl-10,
+  .col-xl-11,
+  .col-xl-12,
+  .col-xl-2,
+  .col-xl-3,
+  .col-xl-4,
+  .col-xl-5,
+  .col-xl-6,
+  .col-xl-7,
+  .col-xl-8,
+  .col-xl-9,
+  .col-xl-auto,
+  .row {
+    padding-right: 5px;
+    padding-left: 5px; }
+  /* line 87, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  .row {
+    margin: 0; }
+  /* line 95, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  header .logo a img {
+    height: 30px;
+    margin-left: 15px; }
+  /* line 102, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  header .site-menu {
+    display: none; }
+  /* line 108, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  nav .nav-bar {
+    display: none; }
+  /* line 113, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  #homepage-one {
+    padding: 0 15px; }
+    /* line 116, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    #homepage-one .page-content {
+      padding: 200px 0 0 0;
+      text-align: center;
+      transform: translateY(42px); }
+  /* line 123, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  #homepage-two {
+    padding: 0 15px; }
+    /* line 126, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    #homepage-two .page-content {
+      padding: 150px 0 20px 0;
+      text-align: center; }
+      /* line 130, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+      #homepage-two .page-content h2 {
+        font-size: 3rem; }
+      /* line 136, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+      #homepage-two .page-content .search-form form input[type="text"] {
+        width: calc(100% - 77px); }
+      /* line 141, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+      #homepage-two .page-content .search-form .suggestion-results {
+        display: none !important; }
+  /* line 150, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  #homepage-three .content-cta p {
+    display: none; }
+  /* line 156, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  .homepage-product {
+    margin-top: 30px;
+    padding: 0 15px; }
+    /* line 161, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    .homepage-product h2.title-categories {
+      font-size: 26px;
+      text-align: center;
+      margin-bottom: 20px; }
+      /* line 166, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+      .homepage-product h2.title-categories a {
+        display: none; }
+    /* line 172, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    .homepage-product .item-product {
+      margin-bottom: 15px; }
+      /* line 175, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+      .homepage-product .item-product .thumb {
+        height: 205px; }
+  /* line 181, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  .homepage-cate {
+    padding: 0 15px; }
+    /* line 185, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    .homepage-cate h2.title-categories {
+      font-size: 26px;
+      text-align: center;
+      margin-bottom: 20px; }
+    /* line 192, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    .homepage-cate .c-item {
+      margin-bottom: 30px; }
+  /* line 197, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  #promo-video {
+    padding: 40px;
+    margin-top: 30px; }
+    /* line 201, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    #promo-video .content-video {
+      margin-top: 30px;
+      text-align: center; }
+      /* line 205, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+      #promo-video .content-video h2 {
+        font-size: 24px; }
+      /* line 209, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+      #promo-video .content-video p {
+        display: none; }
+      /* line 213, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+      #promo-video .content-video a {
+        display: none; }
+  /* line 219, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  footer {
+    margin-top: 0; }
+    /* line 223, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    footer .footer-nav ul {
+      text-align: center; }
+      /* line 226, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+      footer .footer-nav ul li {
+        padding: 0 1.3rem;
+        margin-bottom: 5px; }
+        /* line 230, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+        footer .footer-nav ul li.help {
+          display: none; }
+    /* line 237, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    footer .switcher-language {
+      text-align: center; }
+    /* line 241, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    footer .copyright {
+      text-align: center;
+      margin-top: 15px; }
+    /* line 247, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    footer .social ul {
+      text-align: center; }
+    /* line 252, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    footer .m-help {
+      font-size: 1rem;
+      line-height: 1.5;
+      padding: 0.4375rem 1.75rem;
+      border: 0;
+      border-radius: 2px;
+      color: #fff;
+      cursor: pointer;
+      font-weight: 600;
+      -webkit-transition: all 150ms;
+      transition: all 150ms;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+      -webkit-tap-highlight-color: transparent;
+      display: inline-block;
+      text-decoration: none;
+      background: #ee2761;
+      border: 1px solid #ee2761; }
+  /* line 276, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  #homepage-four {
+    margin-top: 30px;
+    padding: 0 15px; } }
+
+/*# sourceMappingURL=responsive.css.map */
