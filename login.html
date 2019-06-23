@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/fontawesome-pro/css/all.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/responsive.css">
+</head>
+
+<body>
+    <header class="no-homepage">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-2 col-12">
+                    <div class="logo">
+                        <a href="#"><img src="images/logo.png" alt=""></a>
+                        <a class="btn-menu-mobile change-open" rel="open"><i class="fal fa-chevron-down"></i></a>
+                    </div>
+                    <a class="btn-search-mobile"><i class="fal fa-search"></i></a>
+                </div>
+                <div class="col-sm-10 col-12">
+                    <div class="search-form">
+                        <form action="">
+                            <input type="text" class="action-search" placeholder="Favorite animal?" onfocus="searchFocus()" onblur="searchBlur()" onkeyup="searchKeyUp()">
+                            <div class="icon-search">
+                                <i class="fal fa-search"></i>
+                            </div>
+                        </form>
+
+                        <div class="suggestion-results">
+                            <h3>Examples</h3>
+                            <ul>
+                                <li><a href="#">Soccer Mom</a></li>
+                                <li><a href="#">Pug Lover</a></li>
+                                <li><a href="#">NFL Patriot Dads</a></li>
+                                <li><a href="#">Coffee Addict</a></li>
+                                <li><a href="#">Car Fanatic</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <ul class="site-menu">
+                        <li><a href="#">Start Designing</a></li>
+                        <li><a href="#">About Teespring</a></li>
+                        <li class="login"><a href="#"><b>Login</b></a></li>
+                    </ul>
+
+                    <ul class="menu-mobile">
+                        <li class="current"><a href="#">Home</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">How Teespring Works</a></li>
+                        <li><a href="#">Track Your Order</a></li>
+                        <li><a href="#">Create & Sell</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="search-modal">
+        <div class="over-modal"></div>
+        <div class="search-form">
+            <form action="">
+                <input type="text" class="action-search" placeholder="Favorite animal?" onfocus="searchFocus()" onblur="searchBlur()" onkeyup="searchKeyUp()">
+                <div class="icon-search">
+                    <i class="fal fa-search"></i>
+                </div>
+                <a class="btn-cancel">Cancel</a>
+            </form>
+
+            <div class="suggestion-results">
+                <h3>Examples</h3>
+                <ul>
+                    <li><a href="#">Soccer Mom</a></li>
+                    <li><a href="#">Pug Lover</a></li>
+                    <li><a href="#">NFL Patriot Dads</a></li>
+                    <li><a href="#">Coffee Addict</a></li>
+                    <li><a href="#">Car Fanatic</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <section class="container-fluid">
+        <div id="login-page">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="title-page">Login</h1>
+                    <div class="sub-title">
+                        Don't have an account? <a href="#">Sign Up</a>
+                    </div>
+                    <div class="form-login">
+                        <form action="">
+                            <div class="form-item">
+                                <input type="text" placeholder="Email">
+                                <div class="plabel">Email</div>
+                            </div>
+                            <div class="form-item">
+                                <input type="password" placeholder="Password">
+                                <div class="plabel">Password</div>
+                            </div>
+                            
+                            <div class="form-item authen">
+                                <a>Using 2 Factor Authentication? Click here!</a>
+                                <input type="text" placeholder="Two-factor token">
+                                <div class="plabel">Two-factor token</div>
+                            </div>
+                            <!--
+                            <div class="form-item no-border">
+                               Capcha Here 
+                            </div>
+-->
+                            <div class="form-item no-border">
+                                <button type="submit" class="btn-login">Login</button>
+                            </div>
+
+                            <div class="item-option">
+                                <div class="remember">
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" name="remember"> Remember me</label>
+                                    </div>
+                                </div>
+                                <div class="forgot">
+                                    <a href="#">Forgot password?</a>
+                                </div>
+                            </div>
+                            
+                            <div class="login-option-title">
+                                <div class="title">
+                                    Or Log In with
+                                </div>
+                            </div>
+                            
+                            <div class="login-option">
+                                <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+                                <a href="#"><i class="fab fa-google"></i> Google</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="no-homepage">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="footer-nav">
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Jobs</a></li>
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Security</a></li>
+                            <li><a href="#">Track Order</a></li>
+                            <li><a href="#">Training Center</a></li>
+                            <li class="help"><a href="#">Help</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="switcher-language">
+                        <select name="" id="">
+                            <option value="">English (USA)</option>
+                            <option value="">Español</option>
+                            <option value="">Italiano</option>
+                        </select>
+
+                        <a href="#" class="m-help">Help</a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <p class="copyright">© 2019 Teespring, Inc.</p>
+                    <div class="social">
+                        <ul>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+
+</body></html>

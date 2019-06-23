@@ -27,7 +27,7 @@
                         <li><a href="#">About Teespring</a></li>
                         <li class="login"><a href="#"><b>Login</b></a></li>
                     </ul>
-                    
+
                     <ul class="menu-mobile">
                         <li class="current"><a href="#">Home</a></li>
                         <li><a href="#">Login</a></li>
@@ -58,7 +58,7 @@
             </div>
         </div>
     </nav>
-    
+
     <section class="container-fluid">
         <div id="homepage-one">
             <div class="row">
@@ -504,34 +504,8 @@
 
 
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-    <script>
-        function searchFocus() {
-            $('.suggestion-results').show();
-        }
+    <script src="js/main.js"></script>
 
-        function searchBlur() {
-            $('.suggestion-results').hide();
-        }
+</body>
 
-        function searchKeyUp() {
-            var value = $('.action-search').val();
-            if (value.length == 0) {
-                $('.suggestion-results').show();
-            } else {
-                $('.suggestion-results').hide();
-            }
-        }
-        
-        $('.btn-menu-mobile').on('click', function(){
-            var status = $(this).attr('rel');
-            if(status == 'open'){
-                $(this).removeClass('change-open').addClass('change-close').attr('rel','close');
-                $('.menu-mobile').show('fast');
-            }else{
-                $(this).removeClass('change-close').addClass('change-open').attr('rel','open');
-                $('.menu-mobile').hide('fast');
-            }
-        })
-    </script>
-
-</body></html>
+</html>
