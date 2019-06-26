@@ -6,7 +6,13 @@
     padding-right: 0; } }
 
 @media screen and (max-width: 768px) {
-  /* line 12, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  /* line 11, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  .container {
+    padding: 0 !important; }
+  /* line 15, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  .no-padding {
+    padding: 0 !important; }
+  /* line 19, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
   .col,
   .col-1,
   .col-10,
@@ -80,130 +86,130 @@
   .row {
     padding-right: 5px;
     padding-left: 5px; }
-  /* line 87, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  /* line 94, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
   .row {
     margin: 0; }
-  /* line 95, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  /* line 102, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
   header .logo a img {
     height: 30px;
     margin-left: 15px; }
-  /* line 100, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  /* line 107, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
   header .logo a.btn-menu-mobile {
     display: flex; }
-  /* line 106, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  /* line 113, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
   header .site-menu {
     display: none; }
-  /* line 111, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  /* line 118, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
   header.no-homepage .btn-search-mobile {
     display: block;
     position: absolute;
     right: 15px;
     top: 25px;
     font-size: 14px; }
-  /* line 118, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  /* line 126, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
   header.no-homepage .search-form {
     display: none; }
-  /* line 126, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
-  nav .nav-bar {
+  /* line 133, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  nav {
     display: none; }
-  /* line 131, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  /* line 137, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
   #homepage-one {
     padding: 0 15px; }
-    /* line 134, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    /* line 140, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
     #homepage-one .page-content {
       padding: 200px 0 0 0;
       text-align: center;
       transform: translateY(42px); }
-  /* line 141, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  /* line 147, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
   #homepage-two {
     padding: 0 15px; }
-    /* line 144, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    /* line 150, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
     #homepage-two .page-content {
       padding: 150px 0 20px 0;
       text-align: center; }
-      /* line 148, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+      /* line 154, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
       #homepage-two .page-content h2 {
         font-size: 3rem; }
-      /* line 154, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+      /* line 160, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
       #homepage-two .page-content .search-form form input[type="text"] {
         width: calc(100% - 77px); }
-      /* line 159, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+      /* line 165, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
       #homepage-two .page-content .search-form .suggestion-results {
         display: none !important; }
-  /* line 168, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  /* line 174, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
   #homepage-three .content-cta p {
     display: none; }
-  /* line 174, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  /* line 180, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
   .homepage-product {
     margin-top: 30px;
     padding: 0 15px; }
-    /* line 179, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    /* line 185, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
     .homepage-product h2.title-categories {
       font-size: 26px;
       text-align: center;
       margin-bottom: 20px; }
-      /* line 184, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+      /* line 190, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
       .homepage-product h2.title-categories a {
         display: none; }
-    /* line 190, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    /* line 196, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
     .homepage-product .item-product {
       margin-bottom: 15px; }
-      /* line 193, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+      /* line 199, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
       .homepage-product .item-product .thumb {
         height: 205px; }
-  /* line 199, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  /* line 205, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
   .homepage-cate {
     padding: 0 15px; }
-    /* line 203, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    /* line 209, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
     .homepage-cate h2.title-categories {
       font-size: 26px;
       text-align: center;
       margin-bottom: 20px; }
-    /* line 210, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    /* line 216, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
     .homepage-cate .c-item {
       margin-bottom: 30px; }
-  /* line 215, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  /* line 221, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
   #promo-video {
     padding: 40px;
     margin-top: 30px; }
-    /* line 219, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    /* line 225, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
     #promo-video .content-video {
       margin-top: 30px;
       text-align: center; }
-      /* line 223, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+      /* line 229, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
       #promo-video .content-video h2 {
         font-size: 24px; }
-      /* line 227, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+      /* line 233, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
       #promo-video .content-video p {
         display: none; }
-      /* line 231, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+      /* line 237, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
       #promo-video .content-video a {
         display: none; }
-  /* line 237, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  /* line 243, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
   footer {
     margin-top: 0;
     padding: 30px 0; }
-    /* line 242, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    /* line 248, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
     footer .footer-nav ul {
       text-align: center; }
-      /* line 245, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+      /* line 251, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
       footer .footer-nav ul li {
         padding: 0 1.3rem;
         margin-bottom: 5px; }
-        /* line 249, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+        /* line 255, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
         footer .footer-nav ul li.help {
           display: none; }
-    /* line 256, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    /* line 262, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
     footer .switcher-language {
       text-align: center; }
-    /* line 260, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    /* line 266, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
     footer .copyright {
       text-align: center;
       margin-top: 15px; }
-    /* line 266, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    /* line 272, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
     footer .social ul {
       text-align: center; }
-    /* line 271, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    /* line 277, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
     footer .m-help {
       font-size: 1rem;
       line-height: 1.5;
@@ -225,21 +231,96 @@
       text-decoration: none;
       background: #ee2761;
       border: 1px solid #ee2761; }
-    /* line 295, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    /* line 301, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
     footer.no-homepage .switcher-language {
       margin-bottom: 15px;
       float: none;
       text-align: center; }
-      /* line 300, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+      /* line 306, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
       footer.no-homepage .switcher-language a {
         transform: translateY(1px); }
-    /* line 305, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    /* line 311, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
     footer.no-homepage .social {
       float: right;
       transform: translateY(15px); }
-  /* line 312, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  /* line 318, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
   #homepage-four {
     margin-top: 30px;
-    padding: 0 15px; } }
+    padding: 0 15px; }
+  /* line 325, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  #header-shop h1.title {
+    font-size: 40px; }
+  /* line 330, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  #header-shop .sub-title {
+    font-size: 20px; }
+  /* line 335, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  .page-product {
+    margin-top: 30px;
+    padding: 0 15px; }
+    /* line 340, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    .page-product h2.title-categories {
+      font-size: 26px;
+      text-align: center;
+      margin-bottom: 20px; }
+      /* line 345, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+      .page-product h2.title-categories a {
+        display: none; }
+    /* line 351, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    .page-product .item-product {
+      margin-bottom: 15px; }
+      /* line 354, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+      .page-product .item-product .thumb {
+        height: 205px; }
+    /* line 360, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    .page-product .two-item a {
+      width: 100%;
+      margin-bottom: 20px; }
+    /* line 367, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    .page-product .three-item a {
+      width: 100%;
+      margin-bottom: 20px; }
+  /* line 374, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  #header-category {
+    padding: 30px 0 30px 0; }
+    /* line 377, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    #header-category h1 {
+      font-size: 22px; }
+    /* line 381, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    #header-category p {
+      display: none; }
+  /* line 387, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  #content-category .breadcrumb-viewport {
+    padding: 10px !important;
+    margin-bottom: 30px;
+    padding: 10px 0;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.08); }
+    /* line 393, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    #content-category .breadcrumb-viewport .browse {
+      display: block; }
+  /* line 398, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  #content-category .sidebar {
+    display: none; }
+  /* line 403, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  #content-category .data-category .item-product {
+    margin-bottom: 15px; }
+    /* line 406, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    #content-category .data-category .item-product .thumb {
+      height: 170px; }
+  /* line 413, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  .pagination {
+    margin-top: 20px;
+    margin-bottom: 35px; }
+  /* line 418, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  #polici {
+    padding-top: 35px; }
+    /* line 422, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    #polici .sidebar h2.title {
+      display: none; }
+    /* line 427, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    #polici .sidebar ul li {
+      width: auto;
+      display: inline-block;
+      margin-bottom: 20px;
+      margin-right: 10px; } }
 
 /*# sourceMappingURL=responsive.css.map */

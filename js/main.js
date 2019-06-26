@@ -77,3 +77,14 @@ $('.authen a').on('click', function(){
     var authen = $(this).parent();
     authen.removeClass('authen').addClass('authen-input');
 })
+
+$('.btn-mobile-category').on('click', function(){
+    var rel = $(this).attr('rel');
+    if(rel == 'open'){
+        $('.browse .main').show('fast');
+        $(this).attr('rel','close');
+    }else{
+        $('.browse .main').hide('fast');
+        $(this).attr('rel','open');
+    }
+})
