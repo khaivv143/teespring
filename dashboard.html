@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/fontawesome-pro/css/all.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/responsive.css">
+</head>
+
+<body>
+    <header class="no-homepage">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-2 col-12">
+                    <div class="logo">
+                        <a href="#"><img src="images/logo.png" alt=""></a>
+                        <a class="btn-menu-mobile change-open" rel="open"><i class="fal fa-chevron-down"></i></a>
+                    </div>
+                    <a class="btn-search-mobile"><i class="fal fa-search"></i></a>
+                    <a href="#" class="link-cart" rel="1"><i class="fal fa-shopping-cart"></i></a>
+                </div>
+                <div class="col-lg-10 col-12">
+                    <div class="search-form">
+                        <form action="">
+                            <input type="text" class="action-search" placeholder="Favorite animal?" onfocus="searchFocus()" onblur="searchBlur()" onkeyup="searchKeyUp()">
+                            <div class="icon-search">
+                                <i class="fal fa-search"></i>
+                            </div>
+                        </form>
+
+                        <div class="suggestion-results">
+                            <h3>Examples</h3>
+                            <ul>
+                                <li><a href="#">Soccer Mom</a></li>
+                                <li><a href="#">Pug Lover</a></li>
+                                <li><a href="#">NFL Patriot Dads</a></li>
+                                <li><a href="#">Coffee Addict</a></li>
+                                <li><a href="#">Car Fanatic</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <ul class="site-menu">
+                        <li><a href="#">Start Designing</a></li>
+                        <li><a href="#">About Teespring</a></li>
+                        <li class="login"><a href="#"><b>Login</b></a></li>
+                    </ul>
+
+                    <ul class="menu-mobile">
+                        <li class="current"><a href="#">Home</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">How Teespring Works</a></li>
+                        <li><a href="#">Track Your Order</a></li>
+                        <li><a href="#">Create & Sell</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="search-modal">
+        <div class="over-modal"></div>
+        <div class="search-form">
+            <form action="">
+                <input type="text" class="action-search" placeholder="Favorite animal?" onfocus="searchFocus()" onblur="searchBlur()" onkeyup="searchKeyUp()">
+                <div class="icon-search">
+                    <i class="fal fa-search"></i>
+                </div>
+                <a class="btn-cancel">Cancel</a>
+            </form>
+
+            <div class="suggestion-results">
+                <h3>Examples</h3>
+                <ul>
+                    <li><a href="#">Soccer Mom</a></li>
+                    <li><a href="#">Pug Lover</a></li>
+                    <li><a href="#">NFL Patriot Dads</a></li>
+                    <li><a href="#">Coffee Addict</a></li>
+                    <li><a href="#">Car Fanatic</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <section id="dashboard">
+        <div class="site-left">
+            <ul>
+                <li><a href="#"><i class="fas fa-play-circle"></i><span>Integrations</span></a></li>
+                <li class="active"><a href="#"><i class="fal fa-cog"></i><span>Settings</span></a></li>
+            </ul>
+
+            <div class="collapse-button fixed">
+                <span class="button-name" role="open">
+                <i class="fal fa-chevron-right"></i><i class="fal fa-chevron-left"></i> <font>Collapse</font></span>    
+            </div>
+        </div>
+        <div class="site-main">
+            <div class="setting">
+                <div class="row no-padding">
+                    <div class="col-12">
+                        <h1>Profile</h1>
+                    </div>
+                    <div class="col-12 no-padding">
+                        <div class="account-st">
+                            <h3>Change Your Info</h3>
+                            <div class="content">
+                                <div class="left wrap-frm">
+                                    <label>
+                                        <div class="label">Public name</div>
+                                        <input type="text">
+                                    </label>
+                                    <label>
+                                        <div class="label">Phone number</div>
+                                        <input type="text">
+                                    </label>
+                                    <label>
+                                        <div class="label">Advanced Settings</div>
+                                    </label>
+                                    <label>
+                                        <div class="label">Launch Preferences</div>
+                                        <div class="checkbox">
+                                            <input type="checkbox"> <span>Remember me</span>
+                                        </div>
+                                    </label>
+                                    <label>
+                                        <div class="label">Product listing display preferences</div>
+                                        <select name="" id="">
+                                            <option value="0">Do not show sales count at all</option>
+                                            <option value="1">Show total all time sales</option>
+                                        </select>
+                                    </label>
+                                    <label>
+                                        <div class="checkbox">
+                                            <input type="checkbox"> <span>Show timer on always available listings</span>
+                                        </div>
+                                    </label>
+                                    <label class="mg5">
+                                        <div class="label">Increase Your Sales</div>
+                                        <div class="checkbox">
+                                            <input type="checkbox"> <span>Free Teespring basic retargeting
+                                            </span>
+                                        </div>
+                                    </label>
+                                    <label class="mg5">
+                                        <div class="checkbox">
+                                            <input type="checkbox"> <span>Enable boosted retargeting</span>
+                                        </div>
+                                    </label>
+                                    <label class="mg5">
+                                        <div class="checkbox">
+                                            <input type="checkbox"> <span>Teespring Boosted Product Listing Ads</span>
+                                        </div>
+                                    </label>
+                                    <label class="mg5">
+                                        <div class="checkbox">
+                                            <input type="checkbox"> <span>Enable sales through Teespring email marketing</span>
+                                        </div>
+                                    </label>
+                                    <label class="mg5">
+                                        <div class="checkbox">
+                                            <input type="checkbox"> <span>Feature my listings in the Teespring Marketplace</span>
+                                        </div>
+                                    </label>
+                                    <label class="mg5">
+                                        <div class="checkbox">
+                                            <input type="checkbox"> <span>Enable buyers to find my listings through Google and other search engines</span>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="right wrap-frm">
+                                    <label>
+                                        <div class="label">Change your default address</div>
+                                        <div class="group-row">
+                                            <label class="field_street no-margin">
+                                                <input type="text">
+                                                <div class="sub-title">Street</div>
+                                            </label>
+                                            <label class="field_apt no-margin">
+                                                <input type="text">
+                                                <div class="sub-title">Apt / Suite</div>
+                                            </label>
+                                        </div>
+                                    </label>
+                                    <label class="mg2">
+                                        <div class="group-row">
+                                            <label class="field_city no-margin">
+                                                <input type="text">
+                                                <div class="sub-title">City</div>
+                                            </label>
+                                            <label class="field_state no-margin">
+                                                <select name="" id="">
+                                                    <option value="0">AK</option>
+                                                    <option value="1">AL</option>
+                                                    <option value="2">CO</option>
+                                                </select>
+                                                <div class="sub-title">State</div>
+                                            </label>
+                                            <label class="field_zip no-margin">
+                                                <input type="text">
+                                                <div class="sub-title">Apt / Suite</div>
+                                            </label>
+                                        </div>
+                                    </label>
+                                    <label class="field_country">
+                                        <select name="" id="">
+                                            <option value="0">United States</option>
+                                            <option value="1">Turkey</option>
+                                            <option value="2">Zambia</option>
+                                        </select>
+                                        <div class="sub-title">Country</div>
+                                    </label>
+                                    <label>
+                                        <div class="label">Default Time Zone</div>
+                                        <select name="" id="">
+                                            <option value="0">UTC+00:00 - UTC</option>
+                                            <option value="1">UTC+02:00 - Madrid</option>
+                                            <option value="2">UTC+04:30 - Tehran</option>
+                                        </select>
+                                    </label>
+                                    <label>
+                                        <div class="label">Default Currency</div>
+                                        <select name="" id="">
+                                            <option value="0">USD ($)</option>
+                                            <option value="1">EUR (.)</option>
+                                        </select>
+                                    </label>
+                                </div>
+                                <div class="row-button">
+                                    <button>Update Info</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="setting">
+                <div class="row no-padding">
+                    <div class="col-12">
+                        <h1>Profile</h1>
+                    </div>
+                    <div class="col-12 no-padding">
+                        <div class="account-st">
+                            <h3>Change Your Password</h3>
+                            <div class="content">
+                                <div class="only-row wrap-frm">
+                                    <label>
+                                        <div class="label">New password</div>
+                                        <input type="text" placeholder="Must be longer than 6 characters">
+                                    </label>
+                                    <label>
+                                        <div class="label">Confirm new password</div>
+                                        <input type="text">
+                                    </label>
+                                </div>
+                                <div class="row-button">
+                                    <button>Update Info</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="no-homepage">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="footer-nav">
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Jobs</a></li>
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Security</a></li>
+                            <li><a href="#">Track Order</a></li>
+                            <li><a href="#">Training Center</a></li>
+                            <li class="help"><a href="#">Help</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="switcher-language">
+                        <select name="" id="">
+                            <option value="">English (USA)</option>
+                            <option value="">Español</option>
+                            <option value="">Italiano</option>
+                        </select>
+
+                        <a href="#" class="m-help">Help</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <p class="copyright">© 2019 Teespring, Inc.</p>
+                    <div class="social">
+                        <ul>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+
+</body></html>

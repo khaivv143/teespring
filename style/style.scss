@@ -96,6 +96,10 @@ header {
         display: none;
     }
 
+    .link-cart {
+        display: none;
+    }
+
     .site-menu {
         @extend cleanUL;
         float: right;
@@ -580,6 +584,7 @@ nav {
     background: #f6f6f9;
     margin-top: 50px;
     padding: 50px;
+    margin-bottom: 50px;
 
     .thumb-video {
         img {
@@ -614,7 +619,6 @@ nav {
 footer {
     background: #282562;
     padding: 50px 0 30px;
-    margin-top: 50px;
 
     .footer-nav {
         margin-bottom: 40px;
@@ -1234,6 +1238,7 @@ footer {
 #recover-page {
     padding: 50px 0;
     min-height: 400px;
+    margin-bottom: 50px;
 
     h1 {
         &.title-page {
@@ -1501,6 +1506,8 @@ footer {
 }
 
 #content-category {
+    margin-bottom: 50px;
+
     .breadcrumb-viewport {
         position: relative;
         display: flex;
@@ -1728,6 +1735,7 @@ footer {
 
 #polici {
     padding: 60px 0 30px 0;
+    margin-bottom: 50px;
 
     .sidebar {
         h2 {
@@ -1792,6 +1800,7 @@ footer {
 
 #shopping-cart {
     padding: 50px 0;
+    margin-bottom: 50px;
 
     .cart-detail {
         h1 {
@@ -1871,6 +1880,7 @@ footer {
                     width: 80px;
                     display: flex;
                     align-items: center;
+                    justify-content: flex-end;
 
                     a {
                         color: #282562;
@@ -1884,6 +1894,37 @@ footer {
                         &:hover {
                             border-color: #d8dae0;
                         }
+
+                        &.a-btn-edit {}
+
+                        &.a-btn-cancel {
+                            display: none;
+                        }
+                    }
+                }
+
+                .actions-mobile {
+                    display: none;
+
+                    a {
+                        color: #282562;
+                        background-color: #fff;
+                        border: 1px solid #6a6f72;
+                        font-size: 14px;
+                        padding: 3px 15px 0px 15px;
+                        height: 24px;
+                        font-family: MrEavesXLModOT-Bold;
+                        cursor: pointer;
+
+                        &:hover {
+                            border-color: #d8dae0;
+                        }
+
+                        &.a-btn-edit {}
+
+                        &.a-btn-cancel {
+                            display: none;
+                        }
                     }
                 }
 
@@ -1891,7 +1932,563 @@ footer {
                     border: 0;
                     padding: 0;
                 }
+
+                .popup-cart {
+                    width: 100%;
+                    background: #f6f6f9;
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 10px 15px;
+                    margin-top: 10px;
+                    position: relative;
+                    display: none;
+
+                    &::before {
+                        position: absolute;
+                        content: "";
+                        width: 16px;
+                        height: 16px;
+                        background: #f6f6f9;
+                        transform: rotate(45deg);
+                        right: 10px;
+                        top: -8px;
+                    }
+
+                    .remove-item {
+                        width: 100%;
+                        max-width: 300px;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+
+                        a {
+                            @extend cleanA;
+                            font-family: MrEavesXLModOT-Bold;
+                            color: #6a6f72;
+                            font-size: 14px;
+                        }
+                    }
+
+                    .right-cart-edit {
+                        display: flex;
+                        justify-content: flex-end;
+                        width: 100%;
+                        max-width: 300px;
+
+                        .fix-size {
+                            display: flex;
+                            align-items: center;
+                            margin-right: 20px;
+
+                            .label {
+                                margin-right: 5px;
+                            }
+
+                            .select {
+                                select {
+                                    border: 1px solid #e7eaf1;
+                                    height: 34px;
+                                    background: #fff;
+                                    border-radius: 0;
+                                    -webkit-appearance: none;
+                                    outline: none;
+                                    width: 75px;
+                                    padding-left: 10px;
+                                    background-image: url(../images/double_caret.png);
+                                    background-repeat: no-repeat;
+                                    background-position: right .3rem top 50%;
+                                    background-size: 14px 16px;
+                                }
+                            }
+
+                        }
+
+                        .fix-qty {
+                            display: flex;
+                            align-items: center;
+
+                            .label {
+                                margin-right: 5px;
+                            }
+
+                            .input {
+                                input {
+                                    width: 60px;
+                                    height: 34px;
+                                    outline: none;
+                                    padding-left: 10px;
+                                    border: 1px solid #e7eaf1;
+                                }
+                            }
+                        }
+
+                    }
+                }
             }
         }
     }
+
+    .cart-total {
+        background: #f6f6f9;
+        padding: 20px;
+        width: 100%;
+        max-width: 400px;
+        float: right;
+
+        .title {
+            display: flex;
+            justify-content: space-between;
+
+            .label {
+                font-family: MrEavesXLModOT-Bold;
+
+                span {
+                    font-family: MrEavesXLModOT-Book;
+                }
+            }
+
+            .total-price {
+                color: #32b259;
+                font-family: MrEavesXLModOT-Bold;
+            }
+        }
+
+        p {
+            color: #6a6f72;
+            font-size: 14px;
+        }
+
+        .proceed {
+            a {
+                @extend cleanA;
+                background: #32b259;
+                border: 1px solid #32b259;
+                color: #fff;
+                font-family: MrEavesXLModOT-Bold;
+                display: block;
+                text-align: center;
+                padding: 15px;
+                font-size: 18px;
+                border-radius: 5px;
+
+                i {
+                    margin-left: 5px;
+                    transform: translateY(2px);
+                }
+
+                &:hover {
+                    background: #12652c;
+                    border: 1px solid #12652c;
+                }
+            }
+        }
+    }
+
+    .product-related {
+        margin-top: 30px;
+
+        .p-title {
+
+            display: flex;
+            justify-content: space-between;
+
+            h3 {
+                color: #282562;
+                font-family: MrEavesXLModOT-Bold;
+                font-size: 20px;
+                width: calc(100% - 100px);
+
+                a {
+                    color: #ee2761;
+                    font-family: MrEavesXLModOT-Bold;
+                    font-size: 20px;
+                }
+            }
+        }
+
+        a {
+            @extend cleanA;
+            color: #ee2761;
+            width: 100px;
+            font-family: MrEavesXLModOT-Bold;
+            font-size: 14px;
+
+            i {
+                margin-left: 3px;
+                transform: translateY(2px);
+            }
+        }
+    }
+
+    .list-product {
+        margin-top: 0;
+
+        .item-product {
+            .thumb {
+                margin-bottom: 15px;
+                height: 340px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+
+                a {
+                    width: 100%;
+                    display: block;
+
+                    img {
+                        width: 100%;
+
+                    }
+                }
+
+
+            }
+
+            h2 {
+                margin: 0;
+
+                a {
+                    color: #0a0918;
+                    font-weight: bold;
+                    font-size: .9375rem;
+                    display: block;
+                    text-align: center;
+                    padding: 0 15px;
+                    text-decoration: none;
+                    width: 100%;
+                }
+            }
+
+            p {
+                color: #6a6f72;
+                font-size: .8em;
+                text-align: center;
+                padding: 0 15px;
+                margin: 0;
+            }
+        }
+    }
+}
+
+
+#dashboard {
+    background: #f6f6f9;
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    min-height: 100vh;
+
+    .site-left {
+        width: 250px;
+        background: #fff;
+        display: table-cell;
+        border-right: 1px solid #edeff3;
+        vertical-align: top;
+        padding-top: 30px;
+        transition: .3s;
+
+
+
+        .collapse-button {
+            .button-name {
+                font-family: MrEavesXLModOT-Bold;
+                font-size: 13px;
+                color: #6a6f72;
+                cursor: pointer;
+
+                i {
+                    margin-right: 15px;
+                    font-size: 16px;
+                    transform: translateY(1px);
+
+                    &.fa-chevron-right {
+                        display: none;
+                    }
+
+                    &.fa-chevron-left {
+                        display: inherit;
+                    }
+                }
+
+                &:hover {
+                    color: #ee2761;
+                }
+            }
+
+            &.fixed {
+                position: fixed;
+                bottom: 20px;
+                left: 100px;
+                transition: .3s;
+            }
+        }
+
+        ul {
+            @extend cleanUL;
+
+            li {
+                margin-bottom: 20px;
+
+                a {
+                    @extend cleanA;
+                    color: #b8bdc5;
+                    font-family: MrEavesXLModOT-Bold;
+                    font-size: 18px;
+                    display: block;
+                    padding-left: 30px;
+
+                    i {
+                        font-size: 26px;
+                        margin-right: 15px;
+                        transform: translateY(3px);
+                    }
+
+                    &:hover {
+                        color: #282562;
+                    }
+                }
+
+                &.active {
+                    a {
+                        color: #282562;
+                        pointer-events: none;
+                    }
+                }
+            }
+        }
+
+        &.mini-width {
+            width: 88px;
+
+            ul {
+                li {
+                    span {
+                        display: none;
+                    }
+                }
+            }
+
+            .collapse-button {
+                &.fixed {
+                    position: fixed;
+                    bottom: 20px;
+                    left: 40px;
+
+                    .button-name {
+                        font {
+                            display: none;
+                        }
+
+                        .fa-chevron-right {
+                            display: block;
+                        }
+
+                        .fa-chevron-left {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .site-main {
+        width: 100%;
+        display: table-cell;
+
+        .setting {
+            padding: 30px;
+
+            h1 {
+                color: #282562;
+                font-family: MrEavesXLModOT-Bold;
+                font-size: 26px;
+            }
+
+            .account-st {
+                background: #fff;
+                border: 1px solid #edeff3;
+
+                h3 {
+                    color: #282562;
+                    font-family: MrEavesXLModOT-Bold;
+                    font-size: 18px;
+                    border-bottom: 1px solid #edeff3;
+                    padding: 15px 30px;
+                    margin: 0;
+                }
+
+                .content {
+                    padding: 15px 30px;
+                    display: flex;
+                    justify-content: flex-start;
+                    flex-wrap: wrap;
+
+                    .wrap-frm {
+                        &.left {
+                            width: 320px;
+                        }
+
+                        &.right {
+                            width: 100%;
+                            max-width: 400px;
+                            margin-left: 100px;
+                        }
+
+                        &.only-row {
+                            width: 100%;
+                            max-width: 400px;
+                        }
+
+                        label {
+                            display: block;
+                            margin: 1rem 0;
+
+                            .label {
+                                font-size: 15px;
+                                font-family: MrEavesXLModOT-Bold;
+                            }
+
+                            &.mg5 {
+                                margin: .5rem 0;
+                            }
+
+                            .g2 {
+                                margin: .1rem 0;
+                            }
+
+                            &.m .label {
+                                font-family: MrEavesXLModOT-Bold;
+                                font-size: 15px;
+                                margin-bottom: 5px;
+                            }
+
+                            input {
+                                outline: none;
+                                width: 100%;
+                                padding-left: 15px;
+                                height: 40px;
+                                border: 1px solid #d8dae0;
+
+                                &:focus {
+                                    border-color: #5ec8d5;
+                                    outline: none;
+                                    box-shadow: none;
+                                }
+                            }
+
+                            .checkbox {
+                                display: flex;
+                                justify-content: flex-start;
+                                flex-wrap: wrap;
+
+                                input {
+                                    &[type="checkbox"] {
+                                        width: 25px;
+                                        transform: translateY(-2px);
+                                        height: 25px;
+                                    }
+                                }
+
+                                span {
+                                    width: calc(100% - 25px);
+                                }
+                            }
+
+                            select {
+                                border-radius: 0;
+                                -webkit-appearance: none;
+                                background-color: #fff;
+                                background-image: url(../images/double_caret.png);
+                                background-repeat: no-repeat;
+                                background-position: right .3rem top 50%;
+                                background-size: 14px 16px;
+                                border: 1px solid #d8dae0;
+                                width: 100%;
+                                height: 40px;
+                                padding-left: 15px;
+                                outline: none;
+
+                                &:focus {
+                                    border-color: #5ec8d5;
+                                    outline: none;
+                                    box-shadow: none;
+                                }
+                            }
+
+                            .sub-title {
+                                color: #6a6f72;
+                                font-size: 13px;
+                                margin-top: 5px;
+                            }
+
+                            .group-row {
+                                display: flex;
+
+                                .field_street {
+                                    width: 72%;
+                                    margin-right: 4%;
+                                }
+
+                                .field_apt {
+                                    width: 24%;
+                                }
+
+                                .field_city {
+                                    width: 47%;
+                                    margin-right: 4%;
+                                }
+
+                                .field_state {
+                                    width: 21%;
+                                    margin-right: 4%;
+                                }
+
+                                .field_zip {
+                                    width: 24%;
+                                }
+
+                                .no-margin {
+                                    margin-top: 0 !important;
+                                    margin-bottom: 0 !important;
+                                }
+                            }
+
+                            &.field_country {
+                                select {
+                                    width: 47%;
+                                }
+                            }
+                        }
+                    }
+
+                    .row-button {
+                        width: 100%;
+                        margin-top: 15px;
+
+                        button {
+                            color: #fff;
+                            background-color: #282562;
+                            border: 1px solid #282562;
+                            cursor: pointer;
+                            height: 40px;
+                            width: 138px;
+                            border-radius: 2px;
+                            font-size: 14px;
+                            font-family: MrEavesXLModOT-Bold;
+
+                            &:hover {
+                                background-color: #212032;
+                                border-color: #212032;
+                            }
+                        }
+                    }
+
+
+                }
+            }
+        }
+    }
+
 }

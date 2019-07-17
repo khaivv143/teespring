@@ -99,117 +99,136 @@
   /* line 113, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
   header .site-menu {
     display: none; }
-  /* line 118, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  /* line 117, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  header .link-cart {
+    display: block;
+    position: absolute;
+    top: 25px;
+    color: #000;
+    right: 15px; }
+    /* line 124, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    header .link-cart::after {
+      content: attr(rel);
+      font-size: 10px;
+      background: #ffc70e;
+      padding: 1px 4px 0 4px;
+      height: 14px;
+      position: absolute;
+      top: -3px;
+      right: 13px;
+      border-radius: 2px;
+      font-family: MrEavesXLModOT-Bold; }
+  /* line 140, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
   header.no-homepage .btn-search-mobile {
     display: block;
     position: absolute;
-    right: 15px;
+    right: 60px;
     top: 25px;
-    font-size: 14px; }
-  /* line 126, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    font-size: 16px; }
+  /* line 148, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
   header.no-homepage .search-form {
     display: none; }
-  /* line 133, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  /* line 155, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
   nav {
     display: none; }
-  /* line 137, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  /* line 159, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
   #homepage-one {
     padding: 0 15px; }
-    /* line 140, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    /* line 162, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
     #homepage-one .page-content {
       padding: 200px 0 0 0;
       text-align: center;
       transform: translateY(42px); }
-  /* line 147, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  /* line 169, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
   #homepage-two {
     padding: 0 15px; }
-    /* line 150, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    /* line 172, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
     #homepage-two .page-content {
       padding: 150px 0 20px 0;
       text-align: center; }
-      /* line 154, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+      /* line 176, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
       #homepage-two .page-content h2 {
         font-size: 3rem; }
-      /* line 160, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+      /* line 182, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
       #homepage-two .page-content .search-form form input[type="text"] {
         width: calc(100% - 77px); }
-      /* line 165, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+      /* line 187, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
       #homepage-two .page-content .search-form .suggestion-results {
         display: none !important; }
-  /* line 174, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  /* line 196, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
   #homepage-three .content-cta p {
     display: none; }
-  /* line 180, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  /* line 202, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
   .homepage-product {
     margin-top: 30px;
     padding: 0 15px; }
-    /* line 185, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    /* line 207, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
     .homepage-product h2.title-categories {
       font-size: 26px;
       text-align: center;
       margin-bottom: 20px; }
-      /* line 190, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+      /* line 212, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
       .homepage-product h2.title-categories a {
         display: none; }
-    /* line 196, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    /* line 218, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
     .homepage-product .item-product {
       margin-bottom: 15px; }
-      /* line 199, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+      /* line 221, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
       .homepage-product .item-product .thumb {
         height: 205px; }
-  /* line 205, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  /* line 227, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
   .homepage-cate {
     padding: 0 15px; }
-    /* line 209, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    /* line 231, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
     .homepage-cate h2.title-categories {
       font-size: 26px;
       text-align: center;
       margin-bottom: 20px; }
-    /* line 216, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    /* line 238, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
     .homepage-cate .c-item {
       margin-bottom: 30px; }
-  /* line 221, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  /* line 243, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
   #promo-video {
     padding: 40px;
     margin-top: 30px; }
-    /* line 225, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    /* line 247, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
     #promo-video .content-video {
       margin-top: 30px;
       text-align: center; }
-      /* line 229, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+      /* line 251, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
       #promo-video .content-video h2 {
         font-size: 24px; }
-      /* line 233, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+      /* line 255, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
       #promo-video .content-video p {
         display: none; }
-      /* line 237, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+      /* line 259, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
       #promo-video .content-video a {
         display: none; }
-  /* line 243, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  /* line 265, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
   footer {
     margin-top: 0;
     padding: 30px 0; }
-    /* line 248, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    /* line 270, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
     footer .footer-nav ul {
       text-align: center; }
-      /* line 251, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+      /* line 273, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
       footer .footer-nav ul li {
         padding: 0 1.3rem;
         margin-bottom: 5px; }
-        /* line 255, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+        /* line 277, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
         footer .footer-nav ul li.help {
           display: none; }
-    /* line 262, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    /* line 284, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
     footer .switcher-language {
       text-align: center; }
-    /* line 266, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    /* line 288, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
     footer .copyright {
       text-align: center;
       margin-top: 15px; }
-    /* line 272, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    /* line 294, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
     footer .social ul {
       text-align: center; }
-    /* line 277, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    /* line 299, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
     footer .m-help {
       font-size: 1rem;
       line-height: 1.5;
@@ -231,96 +250,191 @@
       text-decoration: none;
       background: #ee2761;
       border: 1px solid #ee2761; }
-    /* line 301, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    /* line 323, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
     footer.no-homepage .switcher-language {
       margin-bottom: 15px;
       float: none;
       text-align: center; }
-      /* line 306, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+      /* line 328, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
       footer.no-homepage .switcher-language a {
         transform: translateY(1px); }
-    /* line 311, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    /* line 333, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
     footer.no-homepage .social {
       float: right;
       transform: translateY(15px); }
-  /* line 318, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  /* line 340, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
   #homepage-four {
     margin-top: 30px;
     padding: 0 15px; }
-  /* line 325, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  /* line 347, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
   #header-shop h1.title {
     font-size: 40px; }
-  /* line 330, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  /* line 352, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
   #header-shop .sub-title {
     font-size: 20px; }
-  /* line 335, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  /* line 357, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
   .page-product {
     margin-top: 30px;
     padding: 0 15px; }
-    /* line 340, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    /* line 362, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
     .page-product h2.title-categories {
       font-size: 26px;
       text-align: center;
       margin-bottom: 20px; }
-      /* line 345, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+      /* line 367, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
       .page-product h2.title-categories a {
         display: none; }
-    /* line 351, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    /* line 373, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
     .page-product .item-product {
       margin-bottom: 15px; }
-      /* line 354, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+      /* line 376, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
       .page-product .item-product .thumb {
         height: 205px; }
-    /* line 360, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    /* line 382, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
     .page-product .two-item a {
       width: 100%;
       margin-bottom: 20px; }
-    /* line 367, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    /* line 389, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
     .page-product .three-item a {
       width: 100%;
       margin-bottom: 20px; }
-  /* line 374, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  /* line 396, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
   #header-category {
     padding: 30px 0 30px 0; }
-    /* line 377, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    /* line 399, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
     #header-category h1 {
       font-size: 22px; }
-    /* line 381, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    /* line 403, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
     #header-category p {
       display: none; }
-  /* line 387, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  /* line 409, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
   #content-category .breadcrumb-viewport {
     padding: 10px !important;
     margin-bottom: 30px;
     padding: 10px 0;
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.08); }
-    /* line 393, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    /* line 415, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
     #content-category .breadcrumb-viewport .browse {
       display: block; }
-  /* line 398, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  /* line 420, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
   #content-category .sidebar {
     display: none; }
-  /* line 403, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  /* line 425, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
   #content-category .data-category .item-product {
     margin-bottom: 15px; }
-    /* line 406, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    /* line 428, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
     #content-category .data-category .item-product .thumb {
       height: 170px; }
-  /* line 413, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  /* line 435, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
   .pagination {
     margin-top: 20px;
     margin-bottom: 35px; }
-  /* line 418, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  /* line 440, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
   #polici {
     padding-top: 35px; }
-    /* line 422, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    /* line 445, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
     #polici .sidebar h2.title {
       display: none; }
-    /* line 427, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    /* line 451, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
     #polici .sidebar ul li {
       width: auto;
       display: inline-block;
       margin-bottom: 20px;
-      margin-right: 10px; } }
+      margin-right: 10px; }
+  /* line 461, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  #shopping-cart {
+    padding: 0; }
+    /* line 465, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    #shopping-cart .cart-detail {
+      padding: 15px; }
+      /* line 468, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+      #shopping-cart .cart-detail h1 {
+        font-size: 20px;
+        margin-bottom: 20px; }
+      /* line 476, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+      #shopping-cart .cart-detail .list .cart-item .thumb {
+        width: 50px;
+        height: 50px; }
+      /* line 481, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+      #shopping-cart .cart-detail .list .cart-item .detail {
+        width: calc(100% - 130px);
+        padding-left: 5px; }
+        /* line 485, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+        #shopping-cart .cart-detail .list .cart-item .detail p {
+          font-size: 13px; }
+          /* line 488, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+          #shopping-cart .cart-detail .list .cart-item .detail p:last-child {
+            display: none; }
+      /* line 494, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+      #shopping-cart .cart-detail .list .cart-item .quantity {
+        font-size: 15px; }
+      /* line 498, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+      #shopping-cart .cart-detail .list .cart-item .price {
+        width: 50px; }
+        /* line 501, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+        #shopping-cart .cart-detail .list .cart-item .price span {
+          font-size: 15px; }
+      /* line 506, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+      #shopping-cart .cart-detail .list .cart-item .actions {
+        display: none; }
+      /* line 510, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+      #shopping-cart .cart-detail .list .cart-item .actions-mobile {
+        width: 100%;
+        display: flex;
+        justify-content: space-between; }
+        /* line 515, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+        #shopping-cart .cart-detail .list .cart-item .actions-mobile span {
+          color: #ee2761;
+          font-size: 14px;
+          margin-top: 10px; }
+          /* line 520, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+          #shopping-cart .cart-detail .list .cart-item .actions-mobile span i {
+            transform: translateY(1px);
+            margin-right: 3px; }
+    /* line 530, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    #shopping-cart .cart-total {
+      max-width: 768px; }
+    /* line 536, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    #shopping-cart .product-related .p-title h3 {
+      width: 100%;
+      font-size: 18px;
+      text-align: center; }
+    /* line 542, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    #shopping-cart .product-related .p-title a {
+      display: none; }
+    /* line 548, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    #shopping-cart .product-related .list-product .item-product {
+      margin-bottom: 15px; }
+      /* line 551, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+      #shopping-cart .product-related .list-product .item-product .thumb {
+        height: 205px; }
+  /* line 560, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  #dashboard .site-left {
+    display: none; }
+  /* line 565, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+  #dashboard .site-main .setting {
+    padding: 0; }
+    /* line 568, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    #dashboard .site-main .setting h1 {
+      display: none; }
+    /* line 572, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+    #dashboard .site-main .setting .account-st {
+      padding: 0; }
+      /* line 575, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+      #dashboard .site-main .setting .account-st h3 {
+        padding: 15px 30px 15px 15px; }
+      /* line 579, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+      #dashboard .site-main .setting .account-st .content {
+        padding: 15px; }
+        /* line 583, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+        #dashboard .site-main .setting .account-st .content .wrap-frm.right {
+          margin-left: 0; }
+        /* line 587, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+        #dashboard .site-main .setting .account-st .content .wrap-frm.left {
+          width: 100%; }
+        /* line 595, /Users/vuvankhai/Desktop/Job/style/responsive.scss */
+        #dashboard .site-main .setting .account-st .content label .checkbox input[type="checkbox"] {
+          width: 5px !important;
+          margin-right: 5px !important; } }
 
 /*# sourceMappingURL=responsive.css.map */

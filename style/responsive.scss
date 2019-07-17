@@ -114,13 +114,35 @@
             display: none;
         }
 
+        .link-cart {
+            display: block;
+            position: absolute;
+            top: 25px;
+            color: #000;
+            right: 15px;
+
+            &::after {
+                content: attr(rel);
+                font-size: 10px;
+                background: #ffc70e;
+                padding: 1px 4px 0 4px;
+                height: 14px;
+                position: absolute;
+                top: -3px;
+                right: 13px;
+                border-radius: 2px;
+                font-family: MrEavesXLModOT-Bold;
+
+            }
+        }
+
         &.no-homepage {
             .btn-search-mobile {
                 display: block;
                 position: absolute;
-                right: 15px;
+                right: 60px;
                 top: 25px;
-                font-size: 14px;
+                font-size: 16px;
             }
 
             .search-form {
@@ -414,17 +436,19 @@
         margin-top: 20px;
         margin-bottom: 35px;
     }
-    
-    #polici{
+
+    #polici {
         padding-top: 35px;
-        .sidebar{
-            h2{
-                &.title{
+
+        .sidebar {
+            h2 {
+                &.title {
                     display: none;
                 }
             }
-            ul{
-                li{
+
+            ul {
+                li {
                     width: auto;
                     display: inline-block;
                     margin-bottom: 20px;
@@ -433,5 +457,152 @@
             }
         }
     }
-}
 
+    #shopping-cart {
+        padding: 0;
+        
+
+        .cart-detail {
+            padding: 15px;
+
+            h1 {
+                font-size: 20px;
+                margin-bottom: 20px;
+
+            }
+
+            .list {
+                .cart-item {
+                    .thumb {
+                        width: 50px;
+                        height: 50px;
+                    }
+
+                    .detail {
+                        width: calc(100% - 130px);
+                        padding-left: 5px;
+
+                        p {
+                            font-size: 13px;
+
+                            &:last-child {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    .quantity {
+                        font-size: 15px;
+                    }
+
+                    .price {
+                        width: 50px;
+
+                        span {
+                            font-size: 15px;
+                        }
+                    }
+
+                    .actions {
+                        display: none;
+                    }
+
+                    .actions-mobile {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+
+                        span {
+                            color: #ee2761;
+                            font-size: 14px;
+                            margin-top: 10px;
+
+                            i {
+                                transform: translateY(1px);
+                                margin-right: 3px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        .cart-total{
+            max-width: 768px;
+        }
+
+        .product-related {
+            .p-title {
+                h3 {
+                    width: 100%;
+                    font-size: 18px;
+                    text-align: center;
+                }
+
+                a {
+                    display: none;
+                }
+            }
+
+            .list-product {
+                .item-product {
+                    margin-bottom: 15px;
+
+                    .thumb {
+                        height: 205px;
+                    }
+                }
+            }
+        }
+    }
+
+    #dashboard {
+        .site-left {
+            display: none;
+        }
+
+        .site-main {
+            .setting {
+                padding: 0;
+
+                h1 {
+                    display: none;
+                }
+
+                .account-st {
+                    padding: 0;
+
+                    h3 {
+                        padding: 15px 30px 15px 15px;
+                    }
+
+                    .content {
+                        padding: 15px;
+
+                        .wrap-frm {
+                            &.right {
+                                margin-left: 0;
+                            }
+                            
+                            &.left{
+                                width: 100%;
+                            }
+                        }
+
+                        label {
+                            .checkbox {
+                                input {
+                                    &[type="checkbox"] {
+                                        width: 5px !important;
+                                        margin-right: 5px !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

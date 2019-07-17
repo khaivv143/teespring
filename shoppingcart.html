@@ -15,14 +15,15 @@
     <header class="no-homepage">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-2 col-12">
+                <div class="col-lg-2 col-12">
                     <div class="logo">
                         <a href="#"><img src="images/logo.png" alt=""></a>
                         <a class="btn-menu-mobile change-open" rel="open"><i class="fal fa-chevron-down"></i></a>
                     </div>
                     <a class="btn-search-mobile"><i class="fal fa-search"></i></a>
+                    <a href="#" class="link-cart" rel="1"><i class="fal fa-shopping-cart"></i></a>
                 </div>
-                <div class="col-sm-10 col-12">
+                <div class="col-lg-10 col-12">
                     <div class="search-form">
                         <form action="">
                             <input type="text" class="action-search" placeholder="Favorite animal?" onfocus="searchFocus()" onblur="searchBlur()" onkeyup="searchKeyUp()">
@@ -106,8 +107,20 @@
 
     <section id="shopping-cart">
         <div class="container">
-            <div class="row">
-                <div class="col-sm-7">
+            <div class="row no-padding">
+                <div class="col-lg-5 order-lg-2 no-padding">
+                    <div class="cart-total">
+                        <div class="title">
+                            <div class="label">Cart Subtotal <span>(1 item)</span></div>
+                            <div class="total-price">$22.99</div>
+                        </div>
+                        <p>Shipping and tax will be calculated on checkout</p>
+                        <div class="proceed">
+                            <a href="#">Proceed to Checkout <i class="fal fa-long-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 order-lg-1">
                     <div class="cart-detail">
                         <h1>Shopping Cart</h1>
                         <div class="list">
@@ -135,7 +148,38 @@
                                 </div>
 
                                 <div class="actions">
-                                    <a> Edit</a>
+                                    <a class="a-btn-edit">Edit</a>
+                                    <a class="a-btn-cancel">Cancel</a>
+                                </div>
+
+                                <div class="actions-mobile">
+                                    <span><i class="fal fa-clock"></i> ended</span>
+                                    <a class="a-btn-edit">Edit</a>
+                                    <a class="a-btn-cancel">Cancel</a>
+                                </div>
+
+                                <div class="popup-cart">
+                                    <div class="remove-item">
+                                        <a href="#">Remove</a>
+                                    </div>
+                                    <div class="right-cart-edit">
+                                        <div class="fix-size">
+                                            <div class="label">Size:</div>
+                                            <div class="select">
+                                                <select name="" id="">
+                                                    <option value="0">S</option>
+                                                    <option value="1">L</option>
+                                                    <option value="2">XL</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="fix-qty">
+                                            <div class="label">Qty:</div>
+                                            <div class="input">
+                                                <input type="number" value="1">
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="cart-item">
@@ -162,15 +206,155 @@
                                 </div>
 
                                 <div class="actions">
-                                    <a> Edit</a>
+                                    <a class="a-btn-edit">Edit</a>
+                                    <a class="a-btn-cancel">Cancel</a>
+                                </div>
+                                
+                                <div class="actions-mobile">
+                                    <span><i class="fal fa-clock"></i> ended</span>
+                                    <a class="a-btn-edit">Edit</a>
+                                    <a class="a-btn-cancel">Cancel</a>
+                                </div>
+
+                                <div class="popup-cart">
+                                    <div class="remove-item">
+                                        <a href="#">Remove</a>
+                                    </div>
+                                    <div class="right-cart-edit">
+                                        <div class="fix-size">
+                                            <div class="label">Size:</div>
+                                            <div class="select">
+                                                <select name="" id="">
+                                                    <option value="0">16 x 16</option>
+                                                    <option value="1">18 x18</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="fix-qty">
+                                            <div class="label">Qty:</div>
+                                            <div class="input">
+                                                <input type="number" value="1">
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-5">
-                    <div class="cart-total">
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="product-related">
+                        <div class="p-title">
+                            <h3>More campaigns from <a href="#">LAND OF THE FREE</a> you might like:</h3>
+                            <a href="#">View More <i class="fal fa-long-arrow-right"></i></a>
+                        </div>
 
+                        <div class="list-product">
+                            <div class="row">
+                                <div class="col-lg-3 col-6">
+                                    <div class="item-product">
+                                        <div class="thumb">
+                                            <a href="#"><img src="images/i1.jpg" alt=""></a>
+                                        </div>
+                                        <div class="info">
+                                            <h2><a href="#">Abstract Galaxy</a></h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-6">
+                                    <div class="item-product">
+                                        <div class="thumb">
+                                            <a href="#"><img src="images/i2.jpg" alt=""></a>
+                                        </div>
+                                        <div class="info">
+                                            <h2><a href="#">Riots not Diets Phone Case</a></h2>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-6">
+                                    <div class="item-product">
+                                        <div class="thumb">
+                                            <a href="#"><img src="images/i3.jpg" alt=""></a>
+                                        </div>
+                                        <div class="info">
+                                            <h2><a href="#">Camo Pattern iPhone Case</a></h2>
+                                            <p>by Secret Service</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-6">
+                                    <div class="item-product">
+                                        <div class="thumb">
+                                            <a href="#"><img src="images/i4.jpg" alt=""></a>
+                                        </div>
+                                        <div class="info">
+                                            <h2><a href="#">America The Brewtiful</a></h2>
+                                            <p>by LAND OF THE FREE</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="product-related">
+                        <div class="p-title">
+                            <h3>More campaigns from <a href="#">Staff Picks</a> you might like:</h3>
+                            <a href="#">View More <i class="fal fa-long-arrow-right"></i></a>
+                        </div>
+
+                        <div class="list-product">
+                            <div class="row">
+                                <div class="col-lg-3 col-6">
+                                    <div class="item-product">
+                                        <div class="thumb">
+                                            <a href="#"><img src="images/i1.jpg" alt=""></a>
+                                        </div>
+                                        <div class="info">
+                                            <h2><a href="#">Abstract Galaxy</a></h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-6">
+                                    <div class="item-product">
+                                        <div class="thumb">
+                                            <a href="#"><img src="images/i2.jpg" alt=""></a>
+                                        </div>
+                                        <div class="info">
+                                            <h2><a href="#">Riots not Diets Phone Case</a></h2>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-6">
+                                    <div class="item-product">
+                                        <div class="thumb">
+                                            <a href="#"><img src="images/i3.jpg" alt=""></a>
+                                        </div>
+                                        <div class="info">
+                                            <h2><a href="#">Camo Pattern iPhone Case</a></h2>
+                                            <p>by Secret Service</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-6">
+                                    <div class="item-product">
+                                        <div class="thumb">
+                                            <a href="#"><img src="images/i4.jpg" alt=""></a>
+                                        </div>
+                                        <div class="info">
+                                            <h2><a href="#">America The Brewtiful</a></h2>
+                                            <p>by LAND OF THE FREE</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -180,7 +364,7 @@
     <footer class="no-homepage">
         <div class="container">
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-lg-6">
                     <div class="footer-nav">
                         <ul>
                             <li><a href="#">About</a></li>
@@ -195,7 +379,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-2">
+                <div class="col-lg-2">
                     <div class="switcher-language">
                         <select name="" id="">
                             <option value="">English (USA)</option>
@@ -206,7 +390,7 @@
                         <a href="#" class="m-help">Help</a>
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-lg-4">
                     <p class="copyright">© 2019 Teespring, Inc.</p>
                     <div class="social">
                         <ul>

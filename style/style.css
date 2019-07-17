@@ -11,13 +11,13 @@
   src: url(/gthaptik/gt-haptik-bold-webfont.ttf); }
 
 /* line 16, /Users/vuvankhai/Desktop/Job/style/style.scss */
-cleanUL, header .site-menu, header .menu-mobile, header .search-form .suggestion-results ul, nav .nav-bar ul, #homepage-two .page-content .search-form .suggestion-results ul, footer ul, footer .social ul, .search-modal .search-form .suggestion-results ul, #polici .sidebar ul {
+cleanUL, header .site-menu, header .menu-mobile, header .search-form .suggestion-results ul, nav .nav-bar ul, #homepage-two .page-content .search-form .suggestion-results ul, footer ul, footer .social ul, .search-modal .search-form .suggestion-results ul, #polici .sidebar ul, #dashboard .site-left ul {
   margin: 0;
   padding: 0;
   list-style: none; }
 
 /* line 22, /Users/vuvankhai/Desktop/Job/style/style.scss */
-cleanA, header .site-menu li a, header .menu-mobile li a, header .search-form .suggestion-results ul li a, nav .nav-bar ul li a, #homepage-two .page-content .search-form .suggestion-results ul li a, .homepage-product h2.title-categories a, footer ul li a, .search-modal .search-form .suggestion-results ul li a, .page-product h2.title-categories a, #content-category .breadcrumb-viewport .breadcrumb-item.breadcrumb-link a, #polici .sidebar ul li a, #shopping-cart .cart-detail .list .cart-item .detail .title a {
+cleanA, header .site-menu li a, header .menu-mobile li a, header .search-form .suggestion-results ul li a, nav .nav-bar ul li a, #homepage-two .page-content .search-form .suggestion-results ul li a, .homepage-product h2.title-categories a, footer ul li a, .search-modal .search-form .suggestion-results ul li a, .page-product h2.title-categories a, #content-category .breadcrumb-viewport .breadcrumb-item.breadcrumb-link a, #polici .sidebar ul li a, #shopping-cart .cart-detail .list .cart-item .detail .title a, #shopping-cart .cart-detail .list .cart-item .popup-cart .remove-item a, #shopping-cart .cart-total .proceed a, #shopping-cart .product-related a, #dashboard .site-left ul li a {
   text-decoration: none;
   color: #000; }
 
@@ -85,25 +85,28 @@ header {
   header .btn-search-mobile {
     display: none; }
   /* line 99, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  header .link-cart {
+    display: none; }
+  /* line 103, /Users/vuvankhai/Desktop/Job/style/style.scss */
   header .site-menu {
     float: right; }
-    /* line 103, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    /* line 107, /Users/vuvankhai/Desktop/Job/style/style.scss */
     header .site-menu li {
       display: inline-block; }
-      /* line 106, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 110, /Users/vuvankhai/Desktop/Job/style/style.scss */
       header .site-menu li a {
         display: block;
         padding: 1rem;
         cursor: pointer;
         color: #0a0918; }
-        /* line 113, /Users/vuvankhai/Desktop/Job/style/style.scss */
+        /* line 117, /Users/vuvankhai/Desktop/Job/style/style.scss */
         header .site-menu li a:hover {
           color: #ee2761; }
-      /* line 119, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 123, /Users/vuvankhai/Desktop/Job/style/style.scss */
       header .site-menu li.login a {
         color: #ee2761;
         font-weight: bold; }
-  /* line 127, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  /* line 131, /Users/vuvankhai/Desktop/Job/style/style.scss */
   header .menu-mobile {
     position: absolute;
     background: #fff;
@@ -112,11 +115,11 @@ header {
     width: calc(100% + 10px);
     display: none;
     z-index: 2; }
-    /* line 137, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    /* line 141, /Users/vuvankhai/Desktop/Job/style/style.scss */
     header .menu-mobile li {
       display: block;
       width: 100%; }
-      /* line 141, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 145, /Users/vuvankhai/Desktop/Job/style/style.scss */
       header .menu-mobile li a {
         display: block;
         padding: .5rem;
@@ -125,23 +128,23 @@ header {
         border-bottom: 1px solid #dee2e6;
         text-align: center;
         font-size: 14px; }
-      /* line 153, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 157, /Users/vuvankhai/Desktop/Job/style/style.scss */
       header .menu-mobile li.current a {
         color: #ee2761;
         font-weight: bold; }
-      /* line 160, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 164, /Users/vuvankhai/Desktop/Job/style/style.scss */
       header .menu-mobile li:last-child a {
         border: 0; }
-  /* line 167, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  /* line 171, /Users/vuvankhai/Desktop/Job/style/style.scss */
   header .search-form {
     position: relative;
     float: left;
     z-index: 2; }
-    /* line 172, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    /* line 176, /Users/vuvankhai/Desktop/Job/style/style.scss */
     header .search-form form {
       position: relative;
       height: 44px; }
-      /* line 177, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 181, /Users/vuvankhai/Desktop/Job/style/style.scss */
       header .search-form form input[type="text"] {
         width: 340px;
         height: 44px;
@@ -152,10 +155,10 @@ header {
         background: #f6f6f9;
         border-radius: 2px 0px 0px 2px;
         transform: translateY(1px); }
-        /* line 188, /Users/vuvankhai/Desktop/Job/style/style.scss */
+        /* line 192, /Users/vuvankhai/Desktop/Job/style/style.scss */
         header .search-form form input[type="text"]:focus {
           box-shadow: none; }
-      /* line 194, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 198, /Users/vuvankhai/Desktop/Job/style/style.scss */
       header .search-form form .icon-search {
         position: absolute;
         left: 0;
@@ -163,27 +166,27 @@ header {
         transform: translateY(-50%);
         width: 40px;
         text-align: center; }
-        /* line 202, /Users/vuvankhai/Desktop/Job/style/style.scss */
+        /* line 206, /Users/vuvankhai/Desktop/Job/style/style.scss */
         header .search-form form .icon-search i {
           font-size: 14px; }
-      /* line 207, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 211, /Users/vuvankhai/Desktop/Job/style/style.scss */
       header .search-form form button {
         background: #ee2761;
         border: 1px solid #ee2761;
         padding: 9px 28px 9px;
         border-radius: 0px 2px 2px 0px;
         margin-left: -4px; }
-        /* line 215, /Users/vuvankhai/Desktop/Job/style/style.scss */
+        /* line 219, /Users/vuvankhai/Desktop/Job/style/style.scss */
         header .search-form form button:hover {
           background: #af1e48;
           border: 1px solid #af1e48; }
-    /* line 222, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    /* line 226, /Users/vuvankhai/Desktop/Job/style/style.scss */
     header .search-form .suggestion-results {
       position: absolute;
       width: 325px;
       top: calc(100% + 7px);
       display: none; }
-      /* line 228, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 232, /Users/vuvankhai/Desktop/Job/style/style.scss */
       header .search-form .suggestion-results h3 {
         background: #edeff3;
         color: #b8bdc5;
@@ -193,12 +196,12 @@ header {
         padding: 5px 20px;
         margin: 0;
         border-radius: 2px 2px 0px 0px; }
-      /* line 239, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 243, /Users/vuvankhai/Desktop/Job/style/style.scss */
       header .search-form .suggestion-results ul {
         background: #fff;
         border-radius: 0px 0px 2px 2px;
         overflow: hidden; }
-        /* line 246, /Users/vuvankhai/Desktop/Job/style/style.scss */
+        /* line 250, /Users/vuvankhai/Desktop/Job/style/style.scss */
         header .search-form .suggestion-results ul li a {
           color: #6a6f72;
           font-weight: bold;
@@ -207,87 +210,87 @@ header {
           line-height: 1.7px;
           text-align: left;
           border-bottom: 1px solid #edeff3; }
-          /* line 256, /Users/vuvankhai/Desktop/Job/style/style.scss */
+          /* line 260, /Users/vuvankhai/Desktop/Job/style/style.scss */
           header .search-form .suggestion-results ul li a:hover {
             background: #f2feff;
             color: #428c95; }
-  /* line 267, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  /* line 271, /Users/vuvankhai/Desktop/Job/style/style.scss */
   header.no-homepage .search-form {
     transform: translateY(8px); }
-    /* line 270, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    /* line 274, /Users/vuvankhai/Desktop/Job/style/style.scss */
     header.no-homepage .search-form .action-search {
       background: #fff;
       border: 1px solid #d8dae0; }
-      /* line 274, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 278, /Users/vuvankhai/Desktop/Job/style/style.scss */
       header.no-homepage .search-form .action-search:focus {
         border-color: #5ec8d5;
         outline: none; }
 
-/* line 284, /Users/vuvankhai/Desktop/Job/style/style.scss */
+/* line 288, /Users/vuvankhai/Desktop/Job/style/style.scss */
 nav.no-homepage {
   border-bottom: 1px solid #edeff3; }
 
-/* line 292, /Users/vuvankhai/Desktop/Job/style/style.scss */
+/* line 296, /Users/vuvankhai/Desktop/Job/style/style.scss */
 nav .nav-bar ul li {
   display: inline-block;
   margin-right: 1.625rem;
   padding: 1rem 0; }
-  /* line 297, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  /* line 301, /Users/vuvankhai/Desktop/Job/style/style.scss */
   nav .nav-bar ul li a {
     color: #575c5f; }
-  /* line 303, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  /* line 307, /Users/vuvankhai/Desktop/Job/style/style.scss */
   nav .nav-bar ul li:hover a {
     color: #000; }
 
-/* line 312, /Users/vuvankhai/Desktop/Job/style/style.scss */
+/* line 316, /Users/vuvankhai/Desktop/Job/style/style.scss */
 #homepage-one {
   background: url(../images/E4TgtTi.png) top !important;
   background-size: cover;
   padding: 0 90px;
   margin-bottom: 50px; }
-  /* line 318, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  /* line 322, /Users/vuvankhai/Desktop/Job/style/style.scss */
   #homepage-one .page-content {
     padding: 150px 0;
     max-width: 570px;
     color: #fff; }
-    /* line 323, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    /* line 327, /Users/vuvankhai/Desktop/Job/style/style.scss */
     #homepage-one .page-content h1 {
       font-size: 3rem;
       font-family: MrEavesXLModOT-Ultra; }
-    /* line 330, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    /* line 334, /Users/vuvankhai/Desktop/Job/style/style.scss */
     #homepage-one .page-content a {
       color: #212032;
       background-color: #fff;
       border: 1px solid #6a6f72; }
-      /* line 336, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 340, /Users/vuvankhai/Desktop/Job/style/style.scss */
       #homepage-one .page-content a:hover {
         border: 1px solid #b6b8b9; }
 
-/* line 343, /Users/vuvankhai/Desktop/Job/style/style.scss */
+/* line 347, /Users/vuvankhai/Desktop/Job/style/style.scss */
 #homepage-two {
   background: url(../images/Remelia+-+HPimageHeader.jpg);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
   padding: 0 90px; }
-  /* line 350, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  /* line 354, /Users/vuvankhai/Desktop/Job/style/style.scss */
   #homepage-two .page-content {
     padding: 150px 0; }
-    /* line 353, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    /* line 357, /Users/vuvankhai/Desktop/Job/style/style.scss */
     #homepage-two .page-content h2 {
       color: #fff;
       font-size: 4.5rem;
       max-width: 570px;
       font-family: MrEavesXLModOT-Ultra; }
-    /* line 360, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    /* line 364, /Users/vuvankhai/Desktop/Job/style/style.scss */
     #homepage-two .page-content .search-form {
       margin-top: 20px;
       position: relative; }
-      /* line 364, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 368, /Users/vuvankhai/Desktop/Job/style/style.scss */
       #homepage-two .page-content .search-form form {
         position: relative;
         height: 44px; }
-        /* line 369, /Users/vuvankhai/Desktop/Job/style/style.scss */
+        /* line 373, /Users/vuvankhai/Desktop/Job/style/style.scss */
         #homepage-two .page-content .search-form form input[type="text"] {
           width: 270px;
           height: 44px;
@@ -298,10 +301,10 @@ nav .nav-bar ul li {
           background: #f6f6f9;
           border-radius: 2px 0px 0px 2px;
           transform: translateY(1px); }
-          /* line 380, /Users/vuvankhai/Desktop/Job/style/style.scss */
+          /* line 384, /Users/vuvankhai/Desktop/Job/style/style.scss */
           #homepage-two .page-content .search-form form input[type="text"]:focus {
             box-shadow: none; }
-        /* line 386, /Users/vuvankhai/Desktop/Job/style/style.scss */
+        /* line 390, /Users/vuvankhai/Desktop/Job/style/style.scss */
         #homepage-two .page-content .search-form form .icon-search {
           position: absolute;
           left: 0;
@@ -309,27 +312,27 @@ nav .nav-bar ul li {
           transform: translateY(-50%);
           width: 40px;
           text-align: center; }
-          /* line 394, /Users/vuvankhai/Desktop/Job/style/style.scss */
+          /* line 398, /Users/vuvankhai/Desktop/Job/style/style.scss */
           #homepage-two .page-content .search-form form .icon-search i {
             font-size: 14px; }
-        /* line 399, /Users/vuvankhai/Desktop/Job/style/style.scss */
+        /* line 403, /Users/vuvankhai/Desktop/Job/style/style.scss */
         #homepage-two .page-content .search-form form button {
           background: #ee2761;
           border: 1px solid #ee2761;
           padding: 9px 28px 9px;
           border-radius: 0px 2px 2px 0px;
           margin-left: -4px; }
-          /* line 407, /Users/vuvankhai/Desktop/Job/style/style.scss */
+          /* line 411, /Users/vuvankhai/Desktop/Job/style/style.scss */
           #homepage-two .page-content .search-form form button:hover {
             background: #af1e48;
             border: 1px solid #af1e48; }
-      /* line 414, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 418, /Users/vuvankhai/Desktop/Job/style/style.scss */
       #homepage-two .page-content .search-form .suggestion-results {
         position: absolute;
         width: 345px;
         top: calc(100% + 7px);
         display: none; }
-        /* line 420, /Users/vuvankhai/Desktop/Job/style/style.scss */
+        /* line 424, /Users/vuvankhai/Desktop/Job/style/style.scss */
         #homepage-two .page-content .search-form .suggestion-results h3 {
           background: #edeff3;
           color: #b8bdc5;
@@ -339,12 +342,12 @@ nav .nav-bar ul li {
           padding: 5px 20px;
           margin: 0;
           border-radius: 2px 2px 0px 0px; }
-        /* line 431, /Users/vuvankhai/Desktop/Job/style/style.scss */
+        /* line 435, /Users/vuvankhai/Desktop/Job/style/style.scss */
         #homepage-two .page-content .search-form .suggestion-results ul {
           background: #fff;
           border-radius: 0px 0px 2px 2px;
           overflow: hidden; }
-          /* line 438, /Users/vuvankhai/Desktop/Job/style/style.scss */
+          /* line 442, /Users/vuvankhai/Desktop/Job/style/style.scss */
           #homepage-two .page-content .search-form .suggestion-results ul li a {
             color: #6a6f72;
             font-weight: bold;
@@ -353,52 +356,52 @@ nav .nav-bar ul li {
             line-height: 1.7px;
             text-align: left;
             border-bottom: 1px solid #edeff3; }
-            /* line 448, /Users/vuvankhai/Desktop/Job/style/style.scss */
+            /* line 452, /Users/vuvankhai/Desktop/Job/style/style.scss */
             #homepage-two .page-content .search-form .suggestion-results ul li a:hover {
               background: #f2feff;
               color: #428c95; }
 
-/* line 460, /Users/vuvankhai/Desktop/Job/style/style.scss */
+/* line 464, /Users/vuvankhai/Desktop/Job/style/style.scss */
 #homepage-three {
   padding: 1.875rem 90px;
   background: #212032; }
-  /* line 464, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  /* line 468, /Users/vuvankhai/Desktop/Job/style/style.scss */
   #homepage-three .content-cta {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: center; }
-    /* line 470, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    /* line 474, /Users/vuvankhai/Desktop/Job/style/style.scss */
     #homepage-three .content-cta p {
       color: #fff;
       font-weight: 400;
       margin: 0 2em 0 0;
       font-size: 1.125rem; }
-    /* line 477, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    /* line 481, /Users/vuvankhai/Desktop/Job/style/style.scss */
     #homepage-three .content-cta a {
       background: #ee2761;
       border: 1px solid #ee2761; }
-      /* line 482, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 486, /Users/vuvankhai/Desktop/Job/style/style.scss */
       #homepage-three .content-cta a:hover {
         background: #af1e48;
         border: 1px solid #af1e48; }
 
-/* line 490, /Users/vuvankhai/Desktop/Job/style/style.scss */
+/* line 494, /Users/vuvankhai/Desktop/Job/style/style.scss */
 .homepage-product {
   margin-top: 50px; }
-  /* line 494, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  /* line 498, /Users/vuvankhai/Desktop/Job/style/style.scss */
   .homepage-product h2.title-categories {
     margin-bottom: 40px;
     color: #000;
     font-family: MrEavesXLModOT-Ultra; }
-    /* line 499, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    /* line 503, /Users/vuvankhai/Desktop/Job/style/style.scss */
     .homepage-product h2.title-categories a {
       font-size: 16px;
       color: #ee2761;
       font-family: MrEavesXLModOT-Book;
       margin-left: 15px;
       font-weight: bold; }
-  /* line 511, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  /* line 515, /Users/vuvankhai/Desktop/Job/style/style.scss */
   .homepage-product .item-product .thumb {
     margin-bottom: 15px;
     height: 340px;
@@ -406,13 +409,13 @@ nav .nav-bar ul li {
     justify-content: center;
     align-items: center;
     overflow: hidden; }
-    /* line 519, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    /* line 523, /Users/vuvankhai/Desktop/Job/style/style.scss */
     .homepage-product .item-product .thumb img {
       width: 100%; }
-  /* line 525, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  /* line 529, /Users/vuvankhai/Desktop/Job/style/style.scss */
   .homepage-product .item-product h2 {
     margin: 0; }
-    /* line 528, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    /* line 532, /Users/vuvankhai/Desktop/Job/style/style.scss */
     .homepage-product .item-product h2 a {
       color: #0a0918;
       font-weight: bold;
@@ -421,7 +424,7 @@ nav .nav-bar ul li {
       text-align: center;
       padding: 0 15px;
       text-decoration: none; }
-  /* line 539, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  /* line 543, /Users/vuvankhai/Desktop/Job/style/style.scss */
   .homepage-product .item-product p {
     color: #6a6f72;
     font-size: .8em;
@@ -429,83 +432,83 @@ nav .nav-bar ul li {
     padding: 0 15px;
     margin: 0; }
 
-/* line 549, /Users/vuvankhai/Desktop/Job/style/style.scss */
+/* line 553, /Users/vuvankhai/Desktop/Job/style/style.scss */
 #homepage-four {
   margin-top: 50px; }
-  /* line 553, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  /* line 557, /Users/vuvankhai/Desktop/Job/style/style.scss */
   #homepage-four .images-desktop img {
     width: 100%;
     height: auto; }
 
-/* line 560, /Users/vuvankhai/Desktop/Job/style/style.scss */
+/* line 564, /Users/vuvankhai/Desktop/Job/style/style.scss */
 .homepage-cate {
   margin-top: 50px; }
-  /* line 565, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  /* line 569, /Users/vuvankhai/Desktop/Job/style/style.scss */
   .homepage-cate h2.title-categories {
     margin-bottom: 40px;
     color: #000;
     font-family: MrEavesXLModOT-Ultra; }
-  /* line 573, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  /* line 577, /Users/vuvankhai/Desktop/Job/style/style.scss */
   .homepage-cate .c-item img {
     width: 100%; }
 
-/* line 579, /Users/vuvankhai/Desktop/Job/style/style.scss */
+/* line 583, /Users/vuvankhai/Desktop/Job/style/style.scss */
 #promo-video {
   background: #f6f6f9;
   margin-top: 50px;
-  padding: 50px; }
-  /* line 585, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  padding: 50px;
+  margin-bottom: 50px; }
+  /* line 590, /Users/vuvankhai/Desktop/Job/style/style.scss */
   #promo-video .thumb-video img {
     width: 100%; }
-  /* line 591, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  /* line 596, /Users/vuvankhai/Desktop/Job/style/style.scss */
   #promo-video .content-video {
     margin-top: 50px; }
-    /* line 594, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    /* line 599, /Users/vuvankhai/Desktop/Job/style/style.scss */
     #promo-video .content-video h2 {
       color: #282562;
       font-family: MrEavesXLModOT-Ultra; }
-    /* line 601, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    /* line 606, /Users/vuvankhai/Desktop/Job/style/style.scss */
     #promo-video .content-video a {
       background: #ee2761;
       border: 1px solid #ee2761; }
-      /* line 606, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 611, /Users/vuvankhai/Desktop/Job/style/style.scss */
       #promo-video .content-video a:hover {
         background: #af1e48;
         border: 1px solid #af1e48; }
 
-/* line 614, /Users/vuvankhai/Desktop/Job/style/style.scss */
+/* line 619, /Users/vuvankhai/Desktop/Job/style/style.scss */
 footer {
   background: #282562;
-  padding: 50px 0 30px;
-  margin-top: 50px; }
-  /* line 619, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  padding: 50px 0 30px; }
+  /* line 623, /Users/vuvankhai/Desktop/Job/style/style.scss */
   footer .footer-nav {
     margin-bottom: 40px; }
-  /* line 626, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  /* line 630, /Users/vuvankhai/Desktop/Job/style/style.scss */
   footer ul li {
     display: inline-block;
     padding-right: 1.8125rem; }
-    /* line 630, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    /* line 634, /Users/vuvankhai/Desktop/Job/style/style.scss */
     footer ul li a {
       color: #fff;
       opacity: .9; }
-      /* line 635, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 639, /Users/vuvankhai/Desktop/Job/style/style.scss */
       footer ul li a:hover {
         opacity: .5;
         color: #fff;
         text-decoration: none; }
-    /* line 643, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    /* line 647, /Users/vuvankhai/Desktop/Job/style/style.scss */
     footer ul li.help a {
       background: #ee2761;
       border: 1px solid #ee2761; }
-      /* line 648, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 652, /Users/vuvankhai/Desktop/Job/style/style.scss */
       footer ul li.help a:hover {
         background: #af1e48;
         border: 1px solid #af1e48; }
-  /* line 658, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  /* line 662, /Users/vuvankhai/Desktop/Job/style/style.scss */
   footer .switcher-language {
     text-align: right; }
-    /* line 661, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    /* line 665, /Users/vuvankhai/Desktop/Job/style/style.scss */
     footer .switcher-language select {
       border: 1px solid rgba(232, 236, 237, 0.7);
       height: 40px;
@@ -514,44 +517,44 @@ footer {
       opacity: .9;
       width: 120px;
       outline: none; }
-      /* line 670, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 674, /Users/vuvankhai/Desktop/Job/style/style.scss */
       footer .switcher-language selectfocus {
         box-shadow: none; }
-  /* line 677, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  /* line 681, /Users/vuvankhai/Desktop/Job/style/style.scss */
   footer p.copyright {
     color: #fff;
     opacity: .9; }
-  /* line 684, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  /* line 688, /Users/vuvankhai/Desktop/Job/style/style.scss */
   footer .social ul {
     text-align: right; }
-    /* line 688, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    /* line 692, /Users/vuvankhai/Desktop/Job/style/style.scss */
     footer .social ul li {
       padding-right: 1rem; }
-      /* line 691, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 695, /Users/vuvankhai/Desktop/Job/style/style.scss */
       footer .social ul li a {
         text-decoration: none;
         color: #fff;
         opacity: .6; }
-        /* line 696, /Users/vuvankhai/Desktop/Job/style/style.scss */
+        /* line 700, /Users/vuvankhai/Desktop/Job/style/style.scss */
         footer .social ul li a:hover {
           opacity: 1; }
-  /* line 704, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  /* line 708, /Users/vuvankhai/Desktop/Job/style/style.scss */
   footer .m-help {
     display: none; }
-  /* line 711, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  /* line 715, /Users/vuvankhai/Desktop/Job/style/style.scss */
   footer.no-homepage .footer-nav ul li {
     margin-bottom: 10px; }
-  /* line 717, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  /* line 721, /Users/vuvankhai/Desktop/Job/style/style.scss */
   footer.no-homepage .switcher-language {
     text-align: left; }
-  /* line 721, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  /* line 725, /Users/vuvankhai/Desktop/Job/style/style.scss */
   footer.no-homepage .copyright {
     float: left; }
-  /* line 725, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  /* line 729, /Users/vuvankhai/Desktop/Job/style/style.scss */
   footer.no-homepage .socical {
     float: right; }
 
-/* line 731, /Users/vuvankhai/Desktop/Job/style/style.scss */
+/* line 735, /Users/vuvankhai/Desktop/Job/style/style.scss */
 .search-modal {
   position: fixed;
   top: 0;
@@ -560,7 +563,7 @@ footer {
   height: 100%;
   z-index: 9999;
   display: none; }
-  /* line 740, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  /* line 744, /Users/vuvankhai/Desktop/Job/style/style.scss */
   .search-modal .over-modal {
     position: absolute;
     top: 0;
@@ -568,18 +571,18 @@ footer {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.6); }
-  /* line 749, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  /* line 753, /Users/vuvankhai/Desktop/Job/style/style.scss */
   .search-modal .search-form {
     position: absolute;
     top: 0;
     width: 100%;
     background: #fff;
     z-index: 1; }
-    /* line 756, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    /* line 760, /Users/vuvankhai/Desktop/Job/style/style.scss */
     .search-modal .search-form form {
       position: relative;
       height: 44px; }
-      /* line 761, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 765, /Users/vuvankhai/Desktop/Job/style/style.scss */
       .search-modal .search-form form input[type="text"] {
         width: 100%;
         height: 44px;
@@ -590,10 +593,10 @@ footer {
         background: #fff;
         border-radius: 2px 0px 0px 2px;
         transform: translateY(1px); }
-        /* line 772, /Users/vuvankhai/Desktop/Job/style/style.scss */
+        /* line 776, /Users/vuvankhai/Desktop/Job/style/style.scss */
         .search-modal .search-form form input[type="text"]:focus {
           box-shadow: none; }
-      /* line 778, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 782, /Users/vuvankhai/Desktop/Job/style/style.scss */
       .search-modal .search-form form .icon-search {
         position: absolute;
         left: 0;
@@ -601,32 +604,32 @@ footer {
         transform: translateY(-50%);
         width: 40px;
         text-align: center; }
-        /* line 786, /Users/vuvankhai/Desktop/Job/style/style.scss */
+        /* line 790, /Users/vuvankhai/Desktop/Job/style/style.scss */
         .search-modal .search-form form .icon-search i {
           font-size: 14px; }
-      /* line 791, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 795, /Users/vuvankhai/Desktop/Job/style/style.scss */
       .search-modal .search-form form button {
         background: #ee2761;
         border: 1px solid #ee2761;
         padding: 9px 28px 9px;
         border-radius: 0px 2px 2px 0px;
         margin-left: -4px; }
-        /* line 799, /Users/vuvankhai/Desktop/Job/style/style.scss */
+        /* line 803, /Users/vuvankhai/Desktop/Job/style/style.scss */
         .search-modal .search-form form button:hover {
           background: #af1e48;
           border: 1px solid #af1e48; }
-      /* line 805, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 809, /Users/vuvankhai/Desktop/Job/style/style.scss */
       .search-modal .search-form form .btn-cancel {
         position: absolute;
         right: 15px;
         top: 11px;
         font-weight: bold; }
-    /* line 813, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    /* line 817, /Users/vuvankhai/Desktop/Job/style/style.scss */
     .search-modal .search-form .suggestion-results {
       position: absolute;
       width: 100%;
       top: calc(100%); }
-      /* line 818, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 822, /Users/vuvankhai/Desktop/Job/style/style.scss */
       .search-modal .search-form .suggestion-results h3 {
         background: #edeff3;
         color: #b8bdc5;
@@ -636,12 +639,12 @@ footer {
         padding: 5px 20px;
         margin: 0;
         border-radius: 2px 2px 0px 0px; }
-      /* line 829, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 833, /Users/vuvankhai/Desktop/Job/style/style.scss */
       .search-modal .search-form .suggestion-results ul {
         background: #fff;
         border-radius: 0px 0px 2px 2px;
         overflow: hidden; }
-        /* line 836, /Users/vuvankhai/Desktop/Job/style/style.scss */
+        /* line 840, /Users/vuvankhai/Desktop/Job/style/style.scss */
         .search-modal .search-form .suggestion-results ul li a {
           color: #6a6f72;
           font-weight: bold;
@@ -650,33 +653,33 @@ footer {
           line-height: 1.7px;
           text-align: left;
           border-bottom: 1px solid #edeff3; }
-          /* line 846, /Users/vuvankhai/Desktop/Job/style/style.scss */
+          /* line 850, /Users/vuvankhai/Desktop/Job/style/style.scss */
           .search-modal .search-form .suggestion-results ul li a:hover {
             background: #f2feff;
             color: #428c95; }
 
-/* line 857, /Users/vuvankhai/Desktop/Job/style/style.scss */
+/* line 861, /Users/vuvankhai/Desktop/Job/style/style.scss */
 #login-page {
   padding: 50px 0; }
-  /* line 861, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  /* line 865, /Users/vuvankhai/Desktop/Job/style/style.scss */
   #login-page h1.title-page {
     color: #282562;
     font-family: MrEavesXLModOT-Ultra;
     font-size: 28px;
     text-align: center; }
-  /* line 869, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  /* line 873, /Users/vuvankhai/Desktop/Job/style/style.scss */
   #login-page .sub-title {
     text-align: center;
     margin-bottom: 15px; }
-    /* line 873, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    /* line 877, /Users/vuvankhai/Desktop/Job/style/style.scss */
     #login-page .sub-title a {
       color: #ee2761; }
-  /* line 878, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  /* line 882, /Users/vuvankhai/Desktop/Job/style/style.scss */
   #login-page .form-login {
     width: 310px;
     margin: auto;
     max-width: 100%; }
-    /* line 883, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    /* line 887, /Users/vuvankhai/Desktop/Job/style/style.scss */
     #login-page .form-login .form-item {
       border: 1px solid #d8dae0;
       height: 50px;
@@ -685,14 +688,14 @@ footer {
       display: flex;
       align-items: center;
       position: relative; }
-      /* line 892, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 896, /Users/vuvankhai/Desktop/Job/style/style.scss */
       #login-page .form-login .form-item input {
         width: 100%;
         outline: none;
         border: 0;
         padding-left: 15px;
         transition: .1s; }
-      /* line 900, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 904, /Users/vuvankhai/Desktop/Job/style/style.scss */
       #login-page .form-login .form-item .plabel {
         position: absolute;
         top: 100%;
@@ -700,48 +703,48 @@ footer {
         font-size: 15px;
         color: #828282;
         transition: .05s; }
-      /* line 910, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 914, /Users/vuvankhai/Desktop/Job/style/style.scss */
       #login-page .form-login .form-item.item-focus input {
         margin-top: 17px; }
-      /* line 914, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 918, /Users/vuvankhai/Desktop/Job/style/style.scss */
       #login-page .form-login .form-item.item-focus .plabel {
         top: 2px; }
-      /* line 920, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 924, /Users/vuvankhai/Desktop/Job/style/style.scss */
       #login-page .form-login .form-item.no-border {
         border: 0; }
-      /* line 924, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 928, /Users/vuvankhai/Desktop/Job/style/style.scss */
       #login-page .form-login .form-item .btn-login {
         background: #ee2761;
         border: 1px solid #ee2761;
         display: block;
         width: 100%; }
-        /* line 931, /Users/vuvankhai/Desktop/Job/style/style.scss */
+        /* line 935, /Users/vuvankhai/Desktop/Job/style/style.scss */
         #login-page .form-login .form-item .btn-login:hover {
           background: #af1e48;
           border: 1px solid #af1e48; }
-      /* line 937, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 941, /Users/vuvankhai/Desktop/Job/style/style.scss */
       #login-page .form-login .form-item.authen {
         border: 0;
         margin-bottom: 0;
         text-align: center; }
-        /* line 942, /Users/vuvankhai/Desktop/Job/style/style.scss */
+        /* line 946, /Users/vuvankhai/Desktop/Job/style/style.scss */
         #login-page .form-login .form-item.authen a {
           cursor: pointer;
           margin: 0 auto;
           transform: translateY(-10px); }
-          /* line 947, /Users/vuvankhai/Desktop/Job/style/style.scss */
+          /* line 951, /Users/vuvankhai/Desktop/Job/style/style.scss */
           #login-page .form-login .form-item.authen a:hover {
             border-bottom: 1px solid #bd1949; }
-        /* line 952, /Users/vuvankhai/Desktop/Job/style/style.scss */
+        /* line 956, /Users/vuvankhai/Desktop/Job/style/style.scss */
         #login-page .form-login .form-item.authen input {
           display: none; }
-        /* line 956, /Users/vuvankhai/Desktop/Job/style/style.scss */
+        /* line 960, /Users/vuvankhai/Desktop/Job/style/style.scss */
         #login-page .form-login .form-item.authen .plabel {
           display: none; }
-      /* line 962, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 966, /Users/vuvankhai/Desktop/Job/style/style.scss */
       #login-page .form-login .form-item.authen-input a {
         display: none; }
-    /* line 968, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    /* line 972, /Users/vuvankhai/Desktop/Job/style/style.scss */
     #login-page .form-login .item-option {
       width: 100%;
       display: flex;
@@ -749,20 +752,20 @@ footer {
       justify-content: space-between;
       color: #6a6f72;
       font-size: 15px; }
-      /* line 978, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 982, /Users/vuvankhai/Desktop/Job/style/style.scss */
       #login-page .form-login .item-option .remember .checkbox input {
         transform: translateY(-0.3px); }
-      /* line 985, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 989, /Users/vuvankhai/Desktop/Job/style/style.scss */
       #login-page .form-login .item-option .forgot a {
         color: #6a6f72; }
-    /* line 991, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    /* line 995, /Users/vuvankhai/Desktop/Job/style/style.scss */
     #login-page .form-login .login-option-title {
       border-bottom: 1px solid #edeff3;
       color: #0a0918;
       height: 0;
       margin: 1rem 0 1.533rem;
       text-align: center; }
-      /* line 998, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 1002, /Users/vuvankhai/Desktop/Job/style/style.scss */
       #login-page .form-login .login-option-title .title {
         color: #6a6f72;
         background: #fff;
@@ -770,51 +773,51 @@ footer {
         padding: 0 1rem;
         position: relative;
         top: -0.8rem; }
-    /* line 1008, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    /* line 1012, /Users/vuvankhai/Desktop/Job/style/style.scss */
     #login-page .form-login .login-option {
       display: flex;
       justify-content: space-between; }
-      /* line 1012, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 1016, /Users/vuvankhai/Desktop/Job/style/style.scss */
       #login-page .form-login .login-option a {
         width: calc(50% - 5px);
         background: #efeff5;
         color: #a7abb3;
         text-align: center; }
-        /* line 1019, /Users/vuvankhai/Desktop/Job/style/style.scss */
+        /* line 1023, /Users/vuvankhai/Desktop/Job/style/style.scss */
         #login-page .form-login .login-option a i {
           margin-right: 5px;
           font-size: 15px;
           transform: translateY(1px); }
-        /* line 1025, /Users/vuvankhai/Desktop/Job/style/style.scss */
+        /* line 1029, /Users/vuvankhai/Desktop/Job/style/style.scss */
         #login-page .form-login .login-option a:hover {
           background: #6a6f72;
           color: #f6f6f9; }
-          /* line 1029, /Users/vuvankhai/Desktop/Job/style/style.scss */
+          /* line 1033, /Users/vuvankhai/Desktop/Job/style/style.scss */
           #login-page .form-login .login-option a:hover i {
             color: #ccc; }
 
-/* line 1038, /Users/vuvankhai/Desktop/Job/style/style.scss */
+/* line 1042, /Users/vuvankhai/Desktop/Job/style/style.scss */
 #signup-page {
   padding: 50px 0; }
-  /* line 1042, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  /* line 1046, /Users/vuvankhai/Desktop/Job/style/style.scss */
   #signup-page h1.title-page {
     color: #282562;
     font-family: MrEavesXLModOT-Ultra;
     font-size: 28px;
     text-align: center; }
-  /* line 1050, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  /* line 1054, /Users/vuvankhai/Desktop/Job/style/style.scss */
   #signup-page .sub-title {
     text-align: center;
     margin-bottom: 15px; }
-    /* line 1054, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    /* line 1058, /Users/vuvankhai/Desktop/Job/style/style.scss */
     #signup-page .sub-title a {
       color: #ee2761; }
-  /* line 1059, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  /* line 1063, /Users/vuvankhai/Desktop/Job/style/style.scss */
   #signup-page .form-signup {
     width: 310px;
     margin: auto;
     max-width: 100%; }
-    /* line 1064, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    /* line 1068, /Users/vuvankhai/Desktop/Job/style/style.scss */
     #signup-page .form-signup .form-item {
       border: 1px solid #d8dae0;
       height: 50px;
@@ -823,14 +826,14 @@ footer {
       display: flex;
       align-items: center;
       position: relative; }
-      /* line 1073, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 1077, /Users/vuvankhai/Desktop/Job/style/style.scss */
       #signup-page .form-signup .form-item input {
         width: 100%;
         outline: none;
         border: 0;
         padding-left: 15px;
         transition: .1s; }
-      /* line 1081, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 1085, /Users/vuvankhai/Desktop/Job/style/style.scss */
       #signup-page .form-signup .form-item .plabel {
         position: absolute;
         top: 100%;
@@ -838,48 +841,48 @@ footer {
         font-size: 15px;
         color: #828282;
         transition: .05s; }
-      /* line 1091, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 1095, /Users/vuvankhai/Desktop/Job/style/style.scss */
       #signup-page .form-signup .form-item.item-focus input {
         margin-top: 17px; }
-      /* line 1095, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 1099, /Users/vuvankhai/Desktop/Job/style/style.scss */
       #signup-page .form-signup .form-item.item-focus .plabel {
         top: 2px; }
-      /* line 1101, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 1105, /Users/vuvankhai/Desktop/Job/style/style.scss */
       #signup-page .form-signup .form-item.no-border {
         border: 0; }
-      /* line 1105, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 1109, /Users/vuvankhai/Desktop/Job/style/style.scss */
       #signup-page .form-signup .form-item .btn-signup {
         background: #ee2761;
         border: 1px solid #ee2761;
         display: block;
         width: 100%; }
-        /* line 1112, /Users/vuvankhai/Desktop/Job/style/style.scss */
+        /* line 1116, /Users/vuvankhai/Desktop/Job/style/style.scss */
         #signup-page .form-signup .form-item .btn-signup:hover {
           background: #af1e48;
           border: 1px solid #af1e48; }
-      /* line 1118, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 1122, /Users/vuvankhai/Desktop/Job/style/style.scss */
       #signup-page .form-signup .form-item.authen {
         border: 0;
         margin-bottom: 0;
         text-align: center; }
-        /* line 1123, /Users/vuvankhai/Desktop/Job/style/style.scss */
+        /* line 1127, /Users/vuvankhai/Desktop/Job/style/style.scss */
         #signup-page .form-signup .form-item.authen a {
           cursor: pointer;
           margin: 0 auto;
           transform: translateY(-10px); }
-          /* line 1128, /Users/vuvankhai/Desktop/Job/style/style.scss */
+          /* line 1132, /Users/vuvankhai/Desktop/Job/style/style.scss */
           #signup-page .form-signup .form-item.authen a:hover {
             border-bottom: 1px solid #bd1949; }
-        /* line 1133, /Users/vuvankhai/Desktop/Job/style/style.scss */
+        /* line 1137, /Users/vuvankhai/Desktop/Job/style/style.scss */
         #signup-page .form-signup .form-item.authen input {
           display: none; }
-        /* line 1137, /Users/vuvankhai/Desktop/Job/style/style.scss */
+        /* line 1141, /Users/vuvankhai/Desktop/Job/style/style.scss */
         #signup-page .form-signup .form-item.authen .plabel {
           display: none; }
-      /* line 1143, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 1147, /Users/vuvankhai/Desktop/Job/style/style.scss */
       #signup-page .form-signup .form-item.authen-input a {
         display: none; }
-    /* line 1149, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    /* line 1153, /Users/vuvankhai/Desktop/Job/style/style.scss */
     #signup-page .form-signup .item-option {
       width: 100%;
       display: flex;
@@ -887,20 +890,20 @@ footer {
       justify-content: space-between;
       color: #6a6f72;
       font-size: 15px; }
-      /* line 1159, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 1163, /Users/vuvankhai/Desktop/Job/style/style.scss */
       #signup-page .form-signup .item-option .remember .checkbox input {
         transform: translateY(-0.3px); }
-      /* line 1166, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 1170, /Users/vuvankhai/Desktop/Job/style/style.scss */
       #signup-page .form-signup .item-option .forgot a {
         color: #6a6f72; }
-    /* line 1172, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    /* line 1176, /Users/vuvankhai/Desktop/Job/style/style.scss */
     #signup-page .form-signup .signup-option-title {
       border-bottom: 1px solid #edeff3;
       color: #0a0918;
       height: 0;
       margin: 1rem 0 1.533rem;
       text-align: center; }
-      /* line 1179, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 1183, /Users/vuvankhai/Desktop/Job/style/style.scss */
       #signup-page .form-signup .signup-option-title .title {
         color: #6a6f72;
         background: #fff;
@@ -908,63 +911,64 @@ footer {
         padding: 0 1rem;
         position: relative;
         top: -0.8rem; }
-    /* line 1189, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    /* line 1193, /Users/vuvankhai/Desktop/Job/style/style.scss */
     #signup-page .form-signup .signup-option {
       display: flex;
       justify-content: space-between; }
-      /* line 1193, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 1197, /Users/vuvankhai/Desktop/Job/style/style.scss */
       #signup-page .form-signup .signup-option a {
         width: calc(50% - 5px);
         background: #efeff5;
         color: #a7abb3;
         text-align: center; }
-        /* line 1200, /Users/vuvankhai/Desktop/Job/style/style.scss */
+        /* line 1204, /Users/vuvankhai/Desktop/Job/style/style.scss */
         #signup-page .form-signup .signup-option a i {
           margin-right: 5px;
           font-size: 15px;
           transform: translateY(1px); }
-        /* line 1206, /Users/vuvankhai/Desktop/Job/style/style.scss */
+        /* line 1210, /Users/vuvankhai/Desktop/Job/style/style.scss */
         #signup-page .form-signup .signup-option a:hover {
           background: #6a6f72;
           color: #f6f6f9; }
-          /* line 1210, /Users/vuvankhai/Desktop/Job/style/style.scss */
+          /* line 1214, /Users/vuvankhai/Desktop/Job/style/style.scss */
           #signup-page .form-signup .signup-option a:hover i {
             color: #ccc; }
-    /* line 1217, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    /* line 1221, /Users/vuvankhai/Desktop/Job/style/style.scss */
     #signup-page .form-signup .authen-message {
       margin-top: 15px; }
-      /* line 1220, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 1224, /Users/vuvankhai/Desktop/Job/style/style.scss */
       #signup-page .form-signup .authen-message p {
         color: #b8bdc5;
         text-align: center;
         font-size: 13px; }
-        /* line 1225, /Users/vuvankhai/Desktop/Job/style/style.scss */
+        /* line 1229, /Users/vuvankhai/Desktop/Job/style/style.scss */
         #signup-page .form-signup .authen-message p a {
           text-decoration: underline;
           color: #b8bdc5; }
 
-/* line 1234, /Users/vuvankhai/Desktop/Job/style/style.scss */
+/* line 1238, /Users/vuvankhai/Desktop/Job/style/style.scss */
 #recover-page {
   padding: 50px 0;
-  min-height: 400px; }
-  /* line 1239, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  min-height: 400px;
+  margin-bottom: 50px; }
+  /* line 1244, /Users/vuvankhai/Desktop/Job/style/style.scss */
   #recover-page h1.title-page {
     color: #282562;
     font-family: MrEavesXLModOT-Ultra;
     font-size: 22px;
     text-align: center; }
-  /* line 1247, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  /* line 1252, /Users/vuvankhai/Desktop/Job/style/style.scss */
   #recover-page .sub-title {
     text-align: center;
     margin-bottom: 15px;
     font-family: MrEavesXLModOT-Ultra;
     color: #282562; }
-  /* line 1254, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  /* line 1259, /Users/vuvankhai/Desktop/Job/style/style.scss */
   #recover-page .form-recover {
     width: 310px;
     margin: auto;
     max-width: 100%; }
-    /* line 1259, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    /* line 1264, /Users/vuvankhai/Desktop/Job/style/style.scss */
     #recover-page .form-recover .form-item {
       border: 1px solid #d8dae0;
       height: 50px;
@@ -973,14 +977,14 @@ footer {
       display: flex;
       align-items: center;
       position: relative; }
-      /* line 1268, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 1273, /Users/vuvankhai/Desktop/Job/style/style.scss */
       #recover-page .form-recover .form-item input {
         width: 100%;
         outline: none;
         border: 0;
         padding-left: 15px;
         transition: .1s; }
-      /* line 1276, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 1281, /Users/vuvankhai/Desktop/Job/style/style.scss */
       #recover-page .form-recover .form-item .plabel {
         position: absolute;
         top: 100%;
@@ -988,39 +992,39 @@ footer {
         font-size: 15px;
         color: #828282;
         transition: .05s; }
-      /* line 1286, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 1291, /Users/vuvankhai/Desktop/Job/style/style.scss */
       #recover-page .form-recover .form-item.item-focus input {
         margin-top: 17px; }
-      /* line 1290, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 1295, /Users/vuvankhai/Desktop/Job/style/style.scss */
       #recover-page .form-recover .form-item.item-focus .plabel {
         top: 2px; }
-      /* line 1296, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 1301, /Users/vuvankhai/Desktop/Job/style/style.scss */
       #recover-page .form-recover .form-item.no-border {
         border: 0; }
-      /* line 1300, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 1305, /Users/vuvankhai/Desktop/Job/style/style.scss */
       #recover-page .form-recover .form-item .btn-recover {
         background: #ee2761;
         border: 1px solid #ee2761;
         margin: auto; }
-        /* line 1306, /Users/vuvankhai/Desktop/Job/style/style.scss */
+        /* line 1311, /Users/vuvankhai/Desktop/Job/style/style.scss */
         #recover-page .form-recover .form-item .btn-recover:hover {
           background: #af1e48;
           border: 1px solid #af1e48; }
 
-/* line 1315, /Users/vuvankhai/Desktop/Job/style/style.scss */
+/* line 1320, /Users/vuvankhai/Desktop/Job/style/style.scss */
 #header-shop {
   background: url(../images/shop_hero_image.jpg);
   background-size: cover;
   padding: 80px 0;
   position: relative; }
-  /* line 1322, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  /* line 1327, /Users/vuvankhai/Desktop/Job/style/style.scss */
   #header-shop h1.title {
     text-align: center;
     color: #fff;
     font-family: MrEavesXLModOT-Ultra;
     font-size: 68px;
     margin-bottom: 30px; }
-  /* line 1331, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  /* line 1336, /Users/vuvankhai/Desktop/Job/style/style.scss */
   #header-shop .sub-title {
     text-align: center;
     color: #fff;
@@ -1028,7 +1032,7 @@ footer {
     max-width: 630px;
     font-family: MrEavesXLModOT-Ultra;
     margin: auto; }
-  /* line 1342, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  /* line 1347, /Users/vuvankhai/Desktop/Job/style/style.scss */
   #header-shop .search-shop form {
     display: flex;
     box-shadow: 6px 6px 30px rgba(33, 32, 50, 0.2);
@@ -1036,7 +1040,7 @@ footer {
     bottom: -100px;
     left: 50%;
     transform: translateX(-50%); }
-    /* line 1351, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    /* line 1356, /Users/vuvankhai/Desktop/Job/style/style.scss */
     #header-shop .search-shop form input {
       width: 290px;
       height: 60px;
@@ -1044,7 +1048,7 @@ footer {
       border: 0;
       padding-left: 15px;
       font-size: 20px; }
-    /* line 1360, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    /* line 1365, /Users/vuvankhai/Desktop/Job/style/style.scss */
     #header-shop .search-shop form button {
       height: 60px;
       font-size: 1.2em;
@@ -1054,24 +1058,24 @@ footer {
       width: 60px;
       color: #fff; }
 
-/* line 1373, /Users/vuvankhai/Desktop/Job/style/style.scss */
+/* line 1378, /Users/vuvankhai/Desktop/Job/style/style.scss */
 .page-product {
   margin-top: 50px; }
-  /* line 1377, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  /* line 1382, /Users/vuvankhai/Desktop/Job/style/style.scss */
   .page-product h2.title-categories {
     margin-bottom: 20px;
     margin-top: 20px;
     color: #0a0918;
     font-family: MrEavesXLModOT-Ultra;
     font-size: 24px; }
-    /* line 1384, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    /* line 1389, /Users/vuvankhai/Desktop/Job/style/style.scss */
     .page-product h2.title-categories a {
       font-size: 16px;
       color: #ee2761;
       font-family: MrEavesXLModOT-Book;
       margin-left: 15px;
       font-weight: bold; }
-  /* line 1396, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  /* line 1401, /Users/vuvankhai/Desktop/Job/style/style.scss */
   .page-product .item-product .thumb {
     margin-bottom: 15px;
     height: 340px;
@@ -1079,13 +1083,13 @@ footer {
     justify-content: center;
     align-items: center;
     overflow: hidden; }
-    /* line 1404, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    /* line 1409, /Users/vuvankhai/Desktop/Job/style/style.scss */
     .page-product .item-product .thumb img {
       width: 100%; }
-  /* line 1410, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  /* line 1415, /Users/vuvankhai/Desktop/Job/style/style.scss */
   .page-product .item-product h2 {
     margin: 0; }
-    /* line 1413, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    /* line 1418, /Users/vuvankhai/Desktop/Job/style/style.scss */
     .page-product .item-product h2 a {
       color: #0a0918;
       font-weight: bold;
@@ -1094,17 +1098,17 @@ footer {
       text-align: center;
       padding: 0 15px;
       text-decoration: none; }
-  /* line 1424, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  /* line 1429, /Users/vuvankhai/Desktop/Job/style/style.scss */
   .page-product .item-product p {
     color: #6a6f72;
     font-size: .8em;
     text-align: center;
     padding: 0 15px;
     margin: 0; }
-  /* line 1433, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  /* line 1438, /Users/vuvankhai/Desktop/Job/style/style.scss */
   .page-product .single-item {
     margin-bottom: 10px; }
-    /* line 1436, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    /* line 1441, /Users/vuvankhai/Desktop/Job/style/style.scss */
     .page-product .single-item a {
       color: #fff;
       font-size: 18px;
@@ -1114,13 +1118,13 @@ footer {
       text-align: center;
       text-decoration: none;
       padding: 170px 0 40px 0; }
-  /* line 1448, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  /* line 1453, /Users/vuvankhai/Desktop/Job/style/style.scss */
   .page-product .two-item {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 10px; }
-    /* line 1454, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    /* line 1459, /Users/vuvankhai/Desktop/Job/style/style.scss */
     .page-product .two-item a {
       width: calc(50% - 7px);
       color: #fff;
@@ -1132,13 +1136,13 @@ footer {
       text-decoration: none;
       padding: 170px 0 40px 0;
       margin: 0; }
-  /* line 1468, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  /* line 1473, /Users/vuvankhai/Desktop/Job/style/style.scss */
   .page-product .three-item {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 10px; }
-    /* line 1474, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    /* line 1479, /Users/vuvankhai/Desktop/Job/style/style.scss */
     .page-product .three-item a {
       width: calc(33% - 5px);
       color: #fff;
@@ -1151,184 +1155,185 @@ footer {
       padding: 170px 0 40px 0;
       margin: 0; }
 
-/* line 1489, /Users/vuvankhai/Desktop/Job/style/style.scss */
+/* line 1494, /Users/vuvankhai/Desktop/Job/style/style.scss */
 #header-category {
   background-image: linear-gradient(91deg, #282562, #ee2761);
   color: #fff;
   padding: 45px 0; }
-  /* line 1494, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  /* line 1499, /Users/vuvankhai/Desktop/Job/style/style.scss */
   #header-category h1 {
     font-family: MrEavesXLModOT-Ultra; }
-  /* line 1498, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  /* line 1503, /Users/vuvankhai/Desktop/Job/style/style.scss */
   #header-category p {
     font-family: MrEavesXLModOT-Ultra; }
 
-/* line 1504, /Users/vuvankhai/Desktop/Job/style/style.scss */
-#content-category .breadcrumb-viewport {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 35px 0 20px 0;
-  z-index: 2; }
+/* line 1508, /Users/vuvankhai/Desktop/Job/style/style.scss */
+#content-category {
+  margin-bottom: 50px; }
   /* line 1511, /Users/vuvankhai/Desktop/Job/style/style.scss */
-  #content-category .breadcrumb-viewport .breadcrumb-item {
-    font-size: 14px; }
-    /* line 1515, /Users/vuvankhai/Desktop/Job/style/style.scss */
-    #content-category .breadcrumb-viewport .breadcrumb-item.breadcrumb-link a {
-      color: #b8bdc5; }
-      /* line 1519, /Users/vuvankhai/Desktop/Job/style/style.scss */
-      #content-category .breadcrumb-viewport .breadcrumb-item.breadcrumb-link a:hover {
-        color: #5ec8d5; }
-  /* line 1527, /Users/vuvankhai/Desktop/Job/style/style.scss */
-  #content-category .breadcrumb-viewport .browse {
-    width: 100%;
-    position: absolute;
-    top: 1px;
-    left: 0;
-    display: none; }
-    /* line 1534, /Users/vuvankhai/Desktop/Job/style/style.scss */
-    #content-category .breadcrumb-viewport .browse .title {
-      background: transparent;
-      display: flex;
-      justify-content: flex-end; }
-      /* line 1539, /Users/vuvankhai/Desktop/Job/style/style.scss */
-      #content-category .breadcrumb-viewport .browse .title a {
-        width: 90px;
-        background: #f6f6f9;
-        text-align: center;
-        height: 40px;
-        line-height: 40px;
-        color: #ee2761;
-        font-family: MrEavesXLModOT-Bold;
-        font-size: 14px; }
-        /* line 1549, /Users/vuvankhai/Desktop/Job/style/style.scss */
-        #content-category .breadcrumb-viewport .browse .title a i {
-          transform: translateY(1px);
-          margin-left: 5px; }
-    /* line 1556, /Users/vuvankhai/Desktop/Job/style/style.scss */
-    #content-category .breadcrumb-viewport .browse .main {
-      padding: 20px;
-      background: #f6f6f9;
-      display: none; }
-      /* line 1561, /Users/vuvankhai/Desktop/Job/style/style.scss */
-      #content-category .breadcrumb-viewport .browse .main .category-nav-link {
-        color: #ee2761;
-        font-family: MrEavesXLModOT-Bold;
-        font-size: 15px;
-        margin-bottom: 20px;
-        display: block;
-        text-decoration: none; }
-      /* line 1570, /Users/vuvankhai/Desktop/Job/style/style.scss */
-      #content-category .breadcrumb-viewport .browse .main ul {
-        margin: 0;
-        padding: 0; }
-        /* line 1574, /Users/vuvankhai/Desktop/Job/style/style.scss */
-        #content-category .breadcrumb-viewport .browse .main ul li {
-          list-style: none; }
-          /* line 1577, /Users/vuvankhai/Desktop/Job/style/style.scss */
-          #content-category .breadcrumb-viewport .browse .main ul li a {
-            color: #000;
-            font-family: MrEavesXLModOT-Bold;
-            font-size: 15px;
-            text-decoration: none; }
-          /* line 1584, /Users/vuvankhai/Desktop/Job/style/style.scss */
-          #content-category .breadcrumb-viewport .browse .main ul li ul {
-            margin-top: 5px;
-            padding-left: 20px; }
-            /* line 1588, /Users/vuvankhai/Desktop/Job/style/style.scss */
-            #content-category .breadcrumb-viewport .browse .main ul li ul li {
-              margin-bottom: 5px; }
-              /* line 1591, /Users/vuvankhai/Desktop/Job/style/style.scss */
-              #content-category .breadcrumb-viewport .browse .main ul li ul li a {
-                color: #6a6f72;
-                text-decoration: none; }
-                /* line 1595, /Users/vuvankhai/Desktop/Job/style/style.scss */
-                #content-category .breadcrumb-viewport .browse .main ul li ul li a:hover {
-                  color: #5ec8d5; }
-
-/* line 1608, /Users/vuvankhai/Desktop/Job/style/style.scss */
-#content-category .sidebar {
-  background: #f6f6f9;
-  padding: 20px; }
-  /* line 1612, /Users/vuvankhai/Desktop/Job/style/style.scss */
-  #content-category .sidebar .category-nav-link {
-    color: #ee2761;
-    font-family: MrEavesXLModOT-Bold;
-    font-size: 15px;
-    margin-bottom: 20px;
-    display: block;
-    text-decoration: none; }
-  /* line 1621, /Users/vuvankhai/Desktop/Job/style/style.scss */
-  #content-category .sidebar ul {
-    margin: 0;
-    padding: 0; }
-    /* line 1625, /Users/vuvankhai/Desktop/Job/style/style.scss */
-    #content-category .sidebar ul li {
-      list-style: none; }
-      /* line 1628, /Users/vuvankhai/Desktop/Job/style/style.scss */
-      #content-category .sidebar ul li a {
-        color: #000;
-        font-family: MrEavesXLModOT-Bold;
-        font-size: 15px;
-        text-decoration: none; }
-      /* line 1635, /Users/vuvankhai/Desktop/Job/style/style.scss */
-      #content-category .sidebar ul li ul {
-        margin-top: 5px;
-        padding-left: 20px; }
-        /* line 1639, /Users/vuvankhai/Desktop/Job/style/style.scss */
-        #content-category .sidebar ul li ul li {
-          margin-bottom: 5px; }
-          /* line 1642, /Users/vuvankhai/Desktop/Job/style/style.scss */
-          #content-category .sidebar ul li ul li a {
-            color: #6a6f72;
-            text-decoration: none; }
-            /* line 1646, /Users/vuvankhai/Desktop/Job/style/style.scss */
-            #content-category .sidebar ul li ul li a:hover {
-              color: #5ec8d5; }
-
-/* line 1657, /Users/vuvankhai/Desktop/Job/style/style.scss */
-#content-category .data-category .item-product {
-  margin-bottom: 15px; }
-  /* line 1660, /Users/vuvankhai/Desktop/Job/style/style.scss */
-  #content-category .data-category .item-product .thumb {
-    margin-bottom: 15px;
-    height: 320px;
+  #content-category .breadcrumb-viewport {
+    position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden; }
-    /* line 1668, /Users/vuvankhai/Desktop/Job/style/style.scss */
-    #content-category .data-category .item-product .thumb img {
-      width: 100%; }
-  /* line 1674, /Users/vuvankhai/Desktop/Job/style/style.scss */
-  #content-category .data-category .item-product h2 {
-    margin: 0; }
-    /* line 1677, /Users/vuvankhai/Desktop/Job/style/style.scss */
-    #content-category .data-category .item-product h2 a {
-      color: #0a0918;
-      font-weight: bold;
-      font-size: .9375rem;
+    flex-wrap: wrap;
+    padding: 35px 0 20px 0;
+    z-index: 2; }
+    /* line 1518, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    #content-category .breadcrumb-viewport .breadcrumb-item {
+      font-size: 14px; }
+      /* line 1522, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      #content-category .breadcrumb-viewport .breadcrumb-item.breadcrumb-link a {
+        color: #b8bdc5; }
+        /* line 1526, /Users/vuvankhai/Desktop/Job/style/style.scss */
+        #content-category .breadcrumb-viewport .breadcrumb-item.breadcrumb-link a:hover {
+          color: #5ec8d5; }
+    /* line 1534, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    #content-category .breadcrumb-viewport .browse {
+      width: 100%;
+      position: absolute;
+      top: 1px;
+      left: 0;
+      display: none; }
+      /* line 1541, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      #content-category .breadcrumb-viewport .browse .title {
+        background: transparent;
+        display: flex;
+        justify-content: flex-end; }
+        /* line 1546, /Users/vuvankhai/Desktop/Job/style/style.scss */
+        #content-category .breadcrumb-viewport .browse .title a {
+          width: 90px;
+          background: #f6f6f9;
+          text-align: center;
+          height: 40px;
+          line-height: 40px;
+          color: #ee2761;
+          font-family: MrEavesXLModOT-Bold;
+          font-size: 14px; }
+          /* line 1556, /Users/vuvankhai/Desktop/Job/style/style.scss */
+          #content-category .breadcrumb-viewport .browse .title a i {
+            transform: translateY(1px);
+            margin-left: 5px; }
+      /* line 1563, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      #content-category .breadcrumb-viewport .browse .main {
+        padding: 20px;
+        background: #f6f6f9;
+        display: none; }
+        /* line 1568, /Users/vuvankhai/Desktop/Job/style/style.scss */
+        #content-category .breadcrumb-viewport .browse .main .category-nav-link {
+          color: #ee2761;
+          font-family: MrEavesXLModOT-Bold;
+          font-size: 15px;
+          margin-bottom: 20px;
+          display: block;
+          text-decoration: none; }
+        /* line 1577, /Users/vuvankhai/Desktop/Job/style/style.scss */
+        #content-category .breadcrumb-viewport .browse .main ul {
+          margin: 0;
+          padding: 0; }
+          /* line 1581, /Users/vuvankhai/Desktop/Job/style/style.scss */
+          #content-category .breadcrumb-viewport .browse .main ul li {
+            list-style: none; }
+            /* line 1584, /Users/vuvankhai/Desktop/Job/style/style.scss */
+            #content-category .breadcrumb-viewport .browse .main ul li a {
+              color: #000;
+              font-family: MrEavesXLModOT-Bold;
+              font-size: 15px;
+              text-decoration: none; }
+            /* line 1591, /Users/vuvankhai/Desktop/Job/style/style.scss */
+            #content-category .breadcrumb-viewport .browse .main ul li ul {
+              margin-top: 5px;
+              padding-left: 20px; }
+              /* line 1595, /Users/vuvankhai/Desktop/Job/style/style.scss */
+              #content-category .breadcrumb-viewport .browse .main ul li ul li {
+                margin-bottom: 5px; }
+                /* line 1598, /Users/vuvankhai/Desktop/Job/style/style.scss */
+                #content-category .breadcrumb-viewport .browse .main ul li ul li a {
+                  color: #6a6f72;
+                  text-decoration: none; }
+                  /* line 1602, /Users/vuvankhai/Desktop/Job/style/style.scss */
+                  #content-category .breadcrumb-viewport .browse .main ul li ul li a:hover {
+                    color: #5ec8d5; }
+  /* line 1615, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  #content-category .sidebar {
+    background: #f6f6f9;
+    padding: 20px; }
+    /* line 1619, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    #content-category .sidebar .category-nav-link {
+      color: #ee2761;
+      font-family: MrEavesXLModOT-Bold;
+      font-size: 15px;
+      margin-bottom: 20px;
       display: block;
+      text-decoration: none; }
+    /* line 1628, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    #content-category .sidebar ul {
+      margin: 0;
+      padding: 0; }
+      /* line 1632, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      #content-category .sidebar ul li {
+        list-style: none; }
+        /* line 1635, /Users/vuvankhai/Desktop/Job/style/style.scss */
+        #content-category .sidebar ul li a {
+          color: #000;
+          font-family: MrEavesXLModOT-Bold;
+          font-size: 15px;
+          text-decoration: none; }
+        /* line 1642, /Users/vuvankhai/Desktop/Job/style/style.scss */
+        #content-category .sidebar ul li ul {
+          margin-top: 5px;
+          padding-left: 20px; }
+          /* line 1646, /Users/vuvankhai/Desktop/Job/style/style.scss */
+          #content-category .sidebar ul li ul li {
+            margin-bottom: 5px; }
+            /* line 1649, /Users/vuvankhai/Desktop/Job/style/style.scss */
+            #content-category .sidebar ul li ul li a {
+              color: #6a6f72;
+              text-decoration: none; }
+              /* line 1653, /Users/vuvankhai/Desktop/Job/style/style.scss */
+              #content-category .sidebar ul li ul li a:hover {
+                color: #5ec8d5; }
+  /* line 1664, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  #content-category .data-category .item-product {
+    margin-bottom: 15px; }
+    /* line 1667, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    #content-category .data-category .item-product .thumb {
+      margin-bottom: 15px;
+      height: 320px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden; }
+      /* line 1675, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      #content-category .data-category .item-product .thumb img {
+        width: 100%; }
+    /* line 1681, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    #content-category .data-category .item-product h2 {
+      margin: 0; }
+      /* line 1684, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      #content-category .data-category .item-product h2 a {
+        color: #0a0918;
+        font-weight: bold;
+        font-size: .9375rem;
+        display: block;
+        text-align: center;
+        padding: 0 15px;
+        text-decoration: none; }
+    /* line 1695, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    #content-category .data-category .item-product p {
+      color: #6a6f72;
+      font-size: .8em;
       text-align: center;
       padding: 0 15px;
-      text-decoration: none; }
-  /* line 1688, /Users/vuvankhai/Desktop/Job/style/style.scss */
-  #content-category .data-category .item-product p {
-    color: #6a6f72;
-    font-size: .8em;
-    text-align: center;
-    padding: 0 15px;
-    margin: 0; }
+      margin: 0; }
 
-/* line 1699, /Users/vuvankhai/Desktop/Job/style/style.scss */
+/* line 1706, /Users/vuvankhai/Desktop/Job/style/style.scss */
 .pagination {
   text-align: center;
   display: block;
   margin-top: 40px; }
-  /* line 1704, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  /* line 1711, /Users/vuvankhai/Desktop/Job/style/style.scss */
   .pagination li {
     display: inline-block; }
-    /* line 1707, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    /* line 1714, /Users/vuvankhai/Desktop/Job/style/style.scss */
     .pagination li a {
       font-family: MrEavesXLModOT-Bold;
       color: #b8bdc5;
@@ -1336,48 +1341,49 @@ footer {
       padding: .1em .75em;
       cursor: pointer;
       text-decoration: none; }
-      /* line 1715, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 1722, /Users/vuvankhai/Desktop/Job/style/style.scss */
       .pagination li a:hover {
         color: #5ec8d5; }
-    /* line 1721, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    /* line 1728, /Users/vuvankhai/Desktop/Job/style/style.scss */
     .pagination li.active a {
       color: #000;
       pointer-events: none; }
 
-/* line 1729, /Users/vuvankhai/Desktop/Job/style/style.scss */
+/* line 1736, /Users/vuvankhai/Desktop/Job/style/style.scss */
 #polici {
-  padding: 60px 0 30px 0; }
-  /* line 1734, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  padding: 60px 0 30px 0;
+  margin-bottom: 50px; }
+  /* line 1742, /Users/vuvankhai/Desktop/Job/style/style.scss */
   #polici .sidebar h2.title {
     color: #6a6f72;
     font-family: MrEavesXLModOT-Bold;
     font-size: 20px; }
-  /* line 1744, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  /* line 1752, /Users/vuvankhai/Desktop/Job/style/style.scss */
   #polici .sidebar ul li {
     width: 100%;
     margin-bottom: 15px; }
-    /* line 1748, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    /* line 1756, /Users/vuvankhai/Desktop/Job/style/style.scss */
     #polici .sidebar ul li a {
       color: #b8bdc5;
       padding: 10px 15px;
       font-family: MrEavesXLModOT-Bold;
       font-size: 15px;
       border-radius: 5px; }
-      /* line 1756, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 1764, /Users/vuvankhai/Desktop/Job/style/style.scss */
       #polici .sidebar ul li a:hover {
         color: #dadada; }
-    /* line 1762, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    /* line 1770, /Users/vuvankhai/Desktop/Job/style/style.scss */
     #polici .sidebar ul li.active a {
       background: #5ec8d5;
       color: #fff;
       pointer-events: none; }
-  /* line 1772, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  /* line 1780, /Users/vuvankhai/Desktop/Job/style/style.scss */
   #polici .main-content {
     overflow-x: hidden; }
-    /* line 1775, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    /* line 1783, /Users/vuvankhai/Desktop/Job/style/style.scss */
     #polici .main-content img {
       max-width: 100%; }
-    /* line 1779, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    /* line 1787, /Users/vuvankhai/Desktop/Job/style/style.scss */
     #polici .main-content h1,
     #polici .main-content h2,
     #polici .main-content h3,
@@ -1387,16 +1393,17 @@ footer {
       color: #282562;
       font-family: MrEavesXLModOT-Ultra; }
 
-/* line 1793, /Users/vuvankhai/Desktop/Job/style/style.scss */
+/* line 1801, /Users/vuvankhai/Desktop/Job/style/style.scss */
 #shopping-cart {
-  padding: 50px 0; }
-  /* line 1797, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  padding: 50px 0;
+  margin-bottom: 50px; }
+  /* line 1806, /Users/vuvankhai/Desktop/Job/style/style.scss */
   #shopping-cart .cart-detail h1 {
     color: #282562;
     font-family: MrEavesXLModOT-Ultra;
     font-size: 28px;
     margin-bottom: 40px; }
-  /* line 1805, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  /* line 1814, /Users/vuvankhai/Desktop/Job/style/style.scss */
   #shopping-cart .cart-detail .list .cart-item {
     display: flex;
     flex-wrap: wrap;
@@ -1404,56 +1411,57 @@ footer {
     border-bottom: 1px solid #edeff3;
     padding-bottom: 15px;
     margin-bottom: 15px; }
-    /* line 1813, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    /* line 1822, /Users/vuvankhai/Desktop/Job/style/style.scss */
     #shopping-cart .cart-detail .list .cart-item .thumb {
       width: 66px;
       height: 66px;
       overflow: hidden;
       border-radius: 4px;
       border: 1px solid #edeff3; }
-      /* line 1820, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 1829, /Users/vuvankhai/Desktop/Job/style/style.scss */
       #shopping-cart .cart-detail .list .cart-item .thumb img {
         width: 100%; }
-    /* line 1825, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    /* line 1834, /Users/vuvankhai/Desktop/Job/style/style.scss */
     #shopping-cart .cart-detail .list .cart-item .detail {
       width: calc(100% - 270px);
       padding-left: 15px;
       font-family: MrEavesXLModOT-Bold; }
-      /* line 1830, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 1839, /Users/vuvankhai/Desktop/Job/style/style.scss */
       #shopping-cart .cart-detail .list .cart-item .detail .title {
         margin-bottom: 1px; }
-      /* line 1838, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 1847, /Users/vuvankhai/Desktop/Job/style/style.scss */
       #shopping-cart .cart-detail .list .cart-item .detail p {
         font-size: 14px;
         color: #6a6f72;
         margin-bottom: 0; }
-        /* line 1843, /Users/vuvankhai/Desktop/Job/style/style.scss */
+        /* line 1852, /Users/vuvankhai/Desktop/Job/style/style.scss */
         #shopping-cart .cart-detail .list .cart-item .detail p i {
           margin-right: 5px;
           font-size: 16px;
           transform: translateY(2px); }
-    /* line 1851, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    /* line 1860, /Users/vuvankhai/Desktop/Job/style/style.scss */
     #shopping-cart .cart-detail .list .cart-item .quantity {
       font-size: 20px;
       display: flex;
       align-items: center;
       color: #6a6f72;
       width: 30px; }
-    /* line 1859, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    /* line 1868, /Users/vuvankhai/Desktop/Job/style/style.scss */
     #shopping-cart .cart-detail .list .cart-item .price {
       width: 90px;
       display: flex;
       align-items: center; }
-      /* line 1864, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      /* line 1873, /Users/vuvankhai/Desktop/Job/style/style.scss */
       #shopping-cart .cart-detail .list .cart-item .price span {
         font-family: MrEavesXLModOT-Bold;
         font-size: 20px; }
-    /* line 1870, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    /* line 1879, /Users/vuvankhai/Desktop/Job/style/style.scss */
     #shopping-cart .cart-detail .list .cart-item .actions {
       width: 80px;
       display: flex;
-      align-items: center; }
-      /* line 1875, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      align-items: center;
+      justify-content: flex-end; }
+      /* line 1885, /Users/vuvankhai/Desktop/Job/style/style.scss */
       #shopping-cart .cart-detail .list .cart-item .actions a {
         color: #282562;
         background-color: #fff;
@@ -1462,12 +1470,460 @@ footer {
         padding: 3px 15px 0px 15px;
         font-family: MrEavesXLModOT-Bold;
         cursor: pointer; }
-        /* line 1884, /Users/vuvankhai/Desktop/Job/style/style.scss */
+        /* line 1894, /Users/vuvankhai/Desktop/Job/style/style.scss */
         #shopping-cart .cart-detail .list .cart-item .actions a:hover {
           border-color: #d8dae0; }
-    /* line 1890, /Users/vuvankhai/Desktop/Job/style/style.scss */
+        /* line 1900, /Users/vuvankhai/Desktop/Job/style/style.scss */
+        #shopping-cart .cart-detail .list .cart-item .actions a.a-btn-cancel {
+          display: none; }
+    /* line 1906, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    #shopping-cart .cart-detail .list .cart-item .actions-mobile {
+      display: none; }
+      /* line 1909, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      #shopping-cart .cart-detail .list .cart-item .actions-mobile a {
+        color: #282562;
+        background-color: #fff;
+        border: 1px solid #6a6f72;
+        font-size: 14px;
+        padding: 3px 15px 0px 15px;
+        height: 24px;
+        font-family: MrEavesXLModOT-Bold;
+        cursor: pointer; }
+        /* line 1919, /Users/vuvankhai/Desktop/Job/style/style.scss */
+        #shopping-cart .cart-detail .list .cart-item .actions-mobile a:hover {
+          border-color: #d8dae0; }
+        /* line 1925, /Users/vuvankhai/Desktop/Job/style/style.scss */
+        #shopping-cart .cart-detail .list .cart-item .actions-mobile a.a-btn-cancel {
+          display: none; }
+    /* line 1931, /Users/vuvankhai/Desktop/Job/style/style.scss */
     #shopping-cart .cart-detail .list .cart-item:last-child {
       border: 0;
       padding: 0; }
+    /* line 1936, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    #shopping-cart .cart-detail .list .cart-item .popup-cart {
+      width: 100%;
+      background: #f6f6f9;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 15px;
+      margin-top: 10px;
+      position: relative;
+      display: none; }
+      /* line 1946, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      #shopping-cart .cart-detail .list .cart-item .popup-cart::before {
+        position: absolute;
+        content: "";
+        width: 16px;
+        height: 16px;
+        background: #f6f6f9;
+        transform: rotate(45deg);
+        right: 10px;
+        top: -8px; }
+      /* line 1957, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      #shopping-cart .cart-detail .list .cart-item .popup-cart .remove-item {
+        width: 100%;
+        max-width: 300px;
+        height: 100%;
+        display: flex;
+        align-items: center; }
+        /* line 1964, /Users/vuvankhai/Desktop/Job/style/style.scss */
+        #shopping-cart .cart-detail .list .cart-item .popup-cart .remove-item a {
+          font-family: MrEavesXLModOT-Bold;
+          color: #6a6f72;
+          font-size: 14px; }
+      /* line 1972, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      #shopping-cart .cart-detail .list .cart-item .popup-cart .right-cart-edit {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        max-width: 300px; }
+        /* line 1978, /Users/vuvankhai/Desktop/Job/style/style.scss */
+        #shopping-cart .cart-detail .list .cart-item .popup-cart .right-cart-edit .fix-size {
+          display: flex;
+          align-items: center;
+          margin-right: 20px; }
+          /* line 1983, /Users/vuvankhai/Desktop/Job/style/style.scss */
+          #shopping-cart .cart-detail .list .cart-item .popup-cart .right-cart-edit .fix-size .label {
+            margin-right: 5px; }
+          /* line 1988, /Users/vuvankhai/Desktop/Job/style/style.scss */
+          #shopping-cart .cart-detail .list .cart-item .popup-cart .right-cart-edit .fix-size .select select {
+            border: 1px solid #e7eaf1;
+            height: 34px;
+            background: #fff;
+            border-radius: 0;
+            -webkit-appearance: none;
+            outline: none;
+            width: 75px;
+            padding-left: 10px;
+            background-image: url(../images/double_caret.png);
+            background-repeat: no-repeat;
+            background-position: right .3rem top 50%;
+            background-size: 14px 16px; }
+        /* line 2006, /Users/vuvankhai/Desktop/Job/style/style.scss */
+        #shopping-cart .cart-detail .list .cart-item .popup-cart .right-cart-edit .fix-qty {
+          display: flex;
+          align-items: center; }
+          /* line 2010, /Users/vuvankhai/Desktop/Job/style/style.scss */
+          #shopping-cart .cart-detail .list .cart-item .popup-cart .right-cart-edit .fix-qty .label {
+            margin-right: 5px; }
+          /* line 2015, /Users/vuvankhai/Desktop/Job/style/style.scss */
+          #shopping-cart .cart-detail .list .cart-item .popup-cart .right-cart-edit .fix-qty .input input {
+            width: 60px;
+            height: 34px;
+            outline: none;
+            padding-left: 10px;
+            border: 1px solid #e7eaf1; }
+  /* line 2031, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  #shopping-cart .cart-total {
+    background: #f6f6f9;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    float: right; }
+    /* line 2038, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    #shopping-cart .cart-total .title {
+      display: flex;
+      justify-content: space-between; }
+      /* line 2042, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      #shopping-cart .cart-total .title .label {
+        font-family: MrEavesXLModOT-Bold; }
+        /* line 2045, /Users/vuvankhai/Desktop/Job/style/style.scss */
+        #shopping-cart .cart-total .title .label span {
+          font-family: MrEavesXLModOT-Book; }
+      /* line 2050, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      #shopping-cart .cart-total .title .total-price {
+        color: #32b259;
+        font-family: MrEavesXLModOT-Bold; }
+    /* line 2056, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    #shopping-cart .cart-total p {
+      color: #6a6f72;
+      font-size: 14px; }
+    /* line 2062, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    #shopping-cart .cart-total .proceed a {
+      background: #32b259;
+      border: 1px solid #32b259;
+      color: #fff;
+      font-family: MrEavesXLModOT-Bold;
+      display: block;
+      text-align: center;
+      padding: 15px;
+      font-size: 18px;
+      border-radius: 5px; }
+      /* line 2074, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      #shopping-cart .cart-total .proceed a i {
+        margin-left: 5px;
+        transform: translateY(2px); }
+      /* line 2079, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      #shopping-cart .cart-total .proceed a:hover {
+        background: #12652c;
+        border: 1px solid #12652c; }
+  /* line 2087, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  #shopping-cart .product-related {
+    margin-top: 30px; }
+    /* line 2090, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    #shopping-cart .product-related .p-title {
+      display: flex;
+      justify-content: space-between; }
+      /* line 2095, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      #shopping-cart .product-related .p-title h3 {
+        color: #282562;
+        font-family: MrEavesXLModOT-Bold;
+        font-size: 20px;
+        width: calc(100% - 100px); }
+        /* line 2101, /Users/vuvankhai/Desktop/Job/style/style.scss */
+        #shopping-cart .product-related .p-title h3 a {
+          color: #ee2761;
+          font-family: MrEavesXLModOT-Bold;
+          font-size: 20px; }
+    /* line 2109, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    #shopping-cart .product-related a {
+      color: #ee2761;
+      width: 100px;
+      font-family: MrEavesXLModOT-Bold;
+      font-size: 14px; }
+      /* line 2116, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      #shopping-cart .product-related a i {
+        margin-left: 3px;
+        transform: translateY(2px); }
+  /* line 2123, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  #shopping-cart .list-product {
+    margin-top: 0; }
+    /* line 2127, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    #shopping-cart .list-product .item-product .thumb {
+      margin-bottom: 15px;
+      height: 340px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden; }
+      /* line 2135, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      #shopping-cart .list-product .item-product .thumb a {
+        width: 100%;
+        display: block; }
+        /* line 2139, /Users/vuvankhai/Desktop/Job/style/style.scss */
+        #shopping-cart .list-product .item-product .thumb a img {
+          width: 100%; }
+    /* line 2148, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    #shopping-cart .list-product .item-product h2 {
+      margin: 0; }
+      /* line 2151, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      #shopping-cart .list-product .item-product h2 a {
+        color: #0a0918;
+        font-weight: bold;
+        font-size: .9375rem;
+        display: block;
+        text-align: center;
+        padding: 0 15px;
+        text-decoration: none;
+        width: 100%; }
+    /* line 2163, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    #shopping-cart .list-product .item-product p {
+      color: #6a6f72;
+      font-size: .8em;
+      text-align: center;
+      padding: 0 15px;
+      margin: 0; }
+
+/* line 2175, /Users/vuvankhai/Desktop/Job/style/style.scss */
+#dashboard {
+  background: #f6f6f9;
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  min-height: 100vh; }
+  /* line 2182, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  #dashboard .site-left {
+    width: 250px;
+    background: #fff;
+    display: table-cell;
+    border-right: 1px solid #edeff3;
+    vertical-align: top;
+    padding-top: 30px;
+    transition: .3s; }
+    /* line 2194, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    #dashboard .site-left .collapse-button .button-name {
+      font-family: MrEavesXLModOT-Bold;
+      font-size: 13px;
+      color: #6a6f72;
+      cursor: pointer; }
+      /* line 2200, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      #dashboard .site-left .collapse-button .button-name i {
+        margin-right: 15px;
+        font-size: 16px;
+        transform: translateY(1px); }
+        /* line 2205, /Users/vuvankhai/Desktop/Job/style/style.scss */
+        #dashboard .site-left .collapse-button .button-name i.fa-chevron-right {
+          display: none; }
+        /* line 2209, /Users/vuvankhai/Desktop/Job/style/style.scss */
+        #dashboard .site-left .collapse-button .button-name i.fa-chevron-left {
+          display: inherit; }
+      /* line 2214, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      #dashboard .site-left .collapse-button .button-name:hover {
+        color: #ee2761; }
+    /* line 2219, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    #dashboard .site-left .collapse-button.fixed {
+      position: fixed;
+      bottom: 20px;
+      left: 100px;
+      transition: .3s; }
+    /* line 2230, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    #dashboard .site-left ul li {
+      margin-bottom: 20px; }
+      /* line 2233, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      #dashboard .site-left ul li a {
+        color: #b8bdc5;
+        font-family: MrEavesXLModOT-Bold;
+        font-size: 18px;
+        display: block;
+        padding-left: 30px; }
+        /* line 2241, /Users/vuvankhai/Desktop/Job/style/style.scss */
+        #dashboard .site-left ul li a i {
+          font-size: 26px;
+          margin-right: 15px;
+          transform: translateY(3px); }
+        /* line 2247, /Users/vuvankhai/Desktop/Job/style/style.scss */
+        #dashboard .site-left ul li a:hover {
+          color: #282562; }
+      /* line 2253, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      #dashboard .site-left ul li.active a {
+        color: #282562;
+        pointer-events: none; }
+    /* line 2261, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    #dashboard .site-left.mini-width {
+      width: 88px; }
+      /* line 2266, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      #dashboard .site-left.mini-width ul li span {
+        display: none; }
+      /* line 2273, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      #dashboard .site-left.mini-width .collapse-button.fixed {
+        position: fixed;
+        bottom: 20px;
+        left: 40px; }
+        /* line 2279, /Users/vuvankhai/Desktop/Job/style/style.scss */
+        #dashboard .site-left.mini-width .collapse-button.fixed .button-name font {
+          display: none; }
+        /* line 2283, /Users/vuvankhai/Desktop/Job/style/style.scss */
+        #dashboard .site-left.mini-width .collapse-button.fixed .button-name .fa-chevron-right {
+          display: block; }
+        /* line 2287, /Users/vuvankhai/Desktop/Job/style/style.scss */
+        #dashboard .site-left.mini-width .collapse-button.fixed .button-name .fa-chevron-left {
+          display: none; }
+  /* line 2296, /Users/vuvankhai/Desktop/Job/style/style.scss */
+  #dashboard .site-main {
+    width: 100%;
+    display: table-cell; }
+    /* line 2300, /Users/vuvankhai/Desktop/Job/style/style.scss */
+    #dashboard .site-main .setting {
+      padding: 30px; }
+      /* line 2303, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      #dashboard .site-main .setting h1 {
+        color: #282562;
+        font-family: MrEavesXLModOT-Bold;
+        font-size: 26px; }
+      /* line 2309, /Users/vuvankhai/Desktop/Job/style/style.scss */
+      #dashboard .site-main .setting .account-st {
+        background: #fff;
+        border: 1px solid #edeff3; }
+        /* line 2313, /Users/vuvankhai/Desktop/Job/style/style.scss */
+        #dashboard .site-main .setting .account-st h3 {
+          color: #282562;
+          font-family: MrEavesXLModOT-Bold;
+          font-size: 18px;
+          border-bottom: 1px solid #edeff3;
+          padding: 15px 30px;
+          margin: 0; }
+        /* line 2322, /Users/vuvankhai/Desktop/Job/style/style.scss */
+        #dashboard .site-main .setting .account-st .content {
+          padding: 15px 30px;
+          display: flex;
+          justify-content: flex-start;
+          flex-wrap: wrap; }
+          /* line 2329, /Users/vuvankhai/Desktop/Job/style/style.scss */
+          #dashboard .site-main .setting .account-st .content .wrap-frm.left {
+            width: 320px; }
+          /* line 2333, /Users/vuvankhai/Desktop/Job/style/style.scss */
+          #dashboard .site-main .setting .account-st .content .wrap-frm.right {
+            width: 100%;
+            max-width: 400px;
+            margin-left: 100px; }
+          /* line 2339, /Users/vuvankhai/Desktop/Job/style/style.scss */
+          #dashboard .site-main .setting .account-st .content .wrap-frm.only-row {
+            width: 100%;
+            max-width: 400px; }
+          /* line 2344, /Users/vuvankhai/Desktop/Job/style/style.scss */
+          #dashboard .site-main .setting .account-st .content .wrap-frm label {
+            display: block;
+            margin: 1rem 0; }
+            /* line 2348, /Users/vuvankhai/Desktop/Job/style/style.scss */
+            #dashboard .site-main .setting .account-st .content .wrap-frm label .label {
+              font-size: 15px;
+              font-family: MrEavesXLModOT-Bold; }
+            /* line 2353, /Users/vuvankhai/Desktop/Job/style/style.scss */
+            #dashboard .site-main .setting .account-st .content .wrap-frm label.mg5 {
+              margin: .5rem 0; }
+            /* line 2357, /Users/vuvankhai/Desktop/Job/style/style.scss */
+            #dashboard .site-main .setting .account-st .content .wrap-frm label .g2 {
+              margin: .1rem 0; }
+            /* line 2361, /Users/vuvankhai/Desktop/Job/style/style.scss */
+            #dashboard .site-main .setting .account-st .content .wrap-frm label.m .label {
+              font-family: MrEavesXLModOT-Bold;
+              font-size: 15px;
+              margin-bottom: 5px; }
+            /* line 2367, /Users/vuvankhai/Desktop/Job/style/style.scss */
+            #dashboard .site-main .setting .account-st .content .wrap-frm label input {
+              outline: none;
+              width: 100%;
+              padding-left: 15px;
+              height: 40px;
+              border: 1px solid #d8dae0; }
+              /* line 2374, /Users/vuvankhai/Desktop/Job/style/style.scss */
+              #dashboard .site-main .setting .account-st .content .wrap-frm label input:focus {
+                border-color: #5ec8d5;
+                outline: none;
+                box-shadow: none; }
+            /* line 2381, /Users/vuvankhai/Desktop/Job/style/style.scss */
+            #dashboard .site-main .setting .account-st .content .wrap-frm label .checkbox {
+              display: flex;
+              justify-content: flex-start;
+              flex-wrap: wrap; }
+              /* line 2387, /Users/vuvankhai/Desktop/Job/style/style.scss */
+              #dashboard .site-main .setting .account-st .content .wrap-frm label .checkbox input[type="checkbox"] {
+                width: 25px;
+                transform: translateY(-2px);
+                height: 25px; }
+              /* line 2394, /Users/vuvankhai/Desktop/Job/style/style.scss */
+              #dashboard .site-main .setting .account-st .content .wrap-frm label .checkbox span {
+                width: calc(100% - 25px); }
+            /* line 2399, /Users/vuvankhai/Desktop/Job/style/style.scss */
+            #dashboard .site-main .setting .account-st .content .wrap-frm label select {
+              border-radius: 0;
+              -webkit-appearance: none;
+              background-color: #fff;
+              background-image: url(../images/double_caret.png);
+              background-repeat: no-repeat;
+              background-position: right .3rem top 50%;
+              background-size: 14px 16px;
+              border: 1px solid #d8dae0;
+              width: 100%;
+              height: 40px;
+              padding-left: 15px;
+              outline: none; }
+              /* line 2413, /Users/vuvankhai/Desktop/Job/style/style.scss */
+              #dashboard .site-main .setting .account-st .content .wrap-frm label select:focus {
+                border-color: #5ec8d5;
+                outline: none;
+                box-shadow: none; }
+            /* line 2420, /Users/vuvankhai/Desktop/Job/style/style.scss */
+            #dashboard .site-main .setting .account-st .content .wrap-frm label .sub-title {
+              color: #6a6f72;
+              font-size: 13px;
+              margin-top: 5px; }
+            /* line 2426, /Users/vuvankhai/Desktop/Job/style/style.scss */
+            #dashboard .site-main .setting .account-st .content .wrap-frm label .group-row {
+              display: flex; }
+              /* line 2429, /Users/vuvankhai/Desktop/Job/style/style.scss */
+              #dashboard .site-main .setting .account-st .content .wrap-frm label .group-row .field_street {
+                width: 72%;
+                margin-right: 4%; }
+              /* line 2434, /Users/vuvankhai/Desktop/Job/style/style.scss */
+              #dashboard .site-main .setting .account-st .content .wrap-frm label .group-row .field_apt {
+                width: 24%; }
+              /* line 2438, /Users/vuvankhai/Desktop/Job/style/style.scss */
+              #dashboard .site-main .setting .account-st .content .wrap-frm label .group-row .field_city {
+                width: 47%;
+                margin-right: 4%; }
+              /* line 2443, /Users/vuvankhai/Desktop/Job/style/style.scss */
+              #dashboard .site-main .setting .account-st .content .wrap-frm label .group-row .field_state {
+                width: 21%;
+                margin-right: 4%; }
+              /* line 2448, /Users/vuvankhai/Desktop/Job/style/style.scss */
+              #dashboard .site-main .setting .account-st .content .wrap-frm label .group-row .field_zip {
+                width: 24%; }
+              /* line 2452, /Users/vuvankhai/Desktop/Job/style/style.scss */
+              #dashboard .site-main .setting .account-st .content .wrap-frm label .group-row .no-margin {
+                margin-top: 0 !important;
+                margin-bottom: 0 !important; }
+            /* line 2459, /Users/vuvankhai/Desktop/Job/style/style.scss */
+            #dashboard .site-main .setting .account-st .content .wrap-frm label.field_country select {
+              width: 47%; }
+          /* line 2466, /Users/vuvankhai/Desktop/Job/style/style.scss */
+          #dashboard .site-main .setting .account-st .content .row-button {
+            width: 100%;
+            margin-top: 15px; }
+            /* line 2470, /Users/vuvankhai/Desktop/Job/style/style.scss */
+            #dashboard .site-main .setting .account-st .content .row-button button {
+              color: #fff;
+              background-color: #282562;
+              border: 1px solid #282562;
+              cursor: pointer;
+              height: 40px;
+              width: 138px;
+              border-radius: 2px;
+              font-size: 14px;
+              font-family: MrEavesXLModOT-Bold; }
+              /* line 2481, /Users/vuvankhai/Desktop/Job/style/style.scss */
+              #dashboard .site-main .setting .account-st .content .row-button button:hover {
+                background-color: #212032;
+                border-color: #212032; }
 
 /*# sourceMappingURL=style.css.map */
