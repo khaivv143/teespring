@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/fontawesome-pro/css/all.css">
+
+    <link type="text/css" rel="stylesheet" media="all" href="fancybox/source/jquery.fancybox.css" />
+    <link type="text/css" rel="stylesheet" media="all" href="magnific-popup/css/magnific-popup.css" />
+    <link rel="stylesheet" type="text/css" href="css/xzoom.css" media="all" />
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/responsive.css">
+</head>
+
+<body>
+    <header class="no-homepage">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-2 col-12">
+                    <div class="logo">
+                        <a href="#"><img src="images/logo.png" alt=""></a>
+                        <a class="btn-menu-mobile change-open" rel="open"><i class="fal fa-chevron-down"></i></a>
+                    </div>
+                    <a class="btn-search-mobile"><i class="fal fa-search"></i></a>
+                    <a href="#" class="link-cart" rel="1"><i class="fal fa-shopping-cart"></i></a>
+                </div>
+                <div class="col-lg-10 col-12">
+                    <div class="search-form">
+                        <form action="">
+                            <input type="text" class="action-search" placeholder="Favorite animal?" onfocus="searchFocus()" onblur="searchBlur()" onkeyup="searchKeyUp()">
+                            <div class="icon-search">
+                                <i class="fal fa-search"></i>
+                            </div>
+                        </form>
+
+                        <div class="suggestion-results">
+                            <h3>Examples</h3>
+                            <ul>
+                                <li><a href="#">Soccer Mom</a></li>
+                                <li><a href="#">Pug Lover</a></li>
+                                <li><a href="#">NFL Patriot Dads</a></li>
+                                <li><a href="#">Coffee Addict</a></li>
+                                <li><a href="#">Car Fanatic</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <ul class="site-menu">
+                        <li><a href="#">Start Designing</a></li>
+                        <li><a href="#">About Teespring</a></li>
+                        <li class="login"><a href="#"><b>Login</b></a></li>
+                    </ul>
+
+                    <ul class="menu-mobile">
+                        <li class="current"><a href="#">Home</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">How Teespring Works</a></li>
+                        <li><a href="#">Track Your Order</a></li>
+                        <li><a href="#">Create & Sell</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="search-modal">
+        <div class="over-modal"></div>
+        <div class="search-form">
+            <form action="">
+                <input type="text" class="action-search" placeholder="Favorite animal?" onfocus="searchFocus()" onblur="searchBlur()" onkeyup="searchKeyUp()">
+                <div class="icon-search">
+                    <i class="fal fa-search"></i>
+                </div>
+                <a class="btn-cancel">Cancel</a>
+            </form>
+
+            <div class="suggestion-results">
+                <h3>Examples</h3>
+                <ul>
+                    <li><a href="#">Soccer Mom</a></li>
+                    <li><a href="#">Pug Lover</a></li>
+                    <li><a href="#">NFL Patriot Dads</a></li>
+                    <li><a href="#">Coffee Addict</a></li>
+                    <li><a href="#">Car Fanatic</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <nav class="no-homepage">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="nav-bar">
+                        <ul>
+                            <li><a href="#">Apparel</a></li>
+                            <li><a href="#">Home Decor</a></li>
+                            <li><a href="#">Socks</a></li>
+                            <li><a href="#">Phone Cases</a></li>
+                            <li><a href="#">Accessories</a></li>
+                            <li><a href="#">Mugs</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container-fluid">
+        <div class="container">
+            <div class="single-product">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="xzoom-container">
+                            
+                            <img class="xzoom" id="xzoom-default" src="images/560.jpg" xoriginal="images/560.jpg" />
+                            
+                            <div class="xzoom-thumbs">
+                                <a href="images/560.jpg"><img class="xzoom-gallery" width="80" src="images/560.jpg" xpreview="images/560.jpg" title="The description goes here"></a>
+                                <a href="images/560%20(1).jpg"><img class="xzoom-gallery" width="80" src="images/560%20(1).jpg" title="The description goes here"></a>
+                                <a href="images/560%20(2).jpg"><img class="xzoom-gallery" width="80" src="images/560%20(2).jpg" title="The description goes here"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="main-info">
+                            <h1>Muay Thai hoodie</h1>
+                            <div class="store">
+                                from <a href="#">MMA CITY</a>
+                            </div>
+                            <div class="excerpt">
+                                <p>Reserve Yours Now To Get For The Holidays! <strong>Only available Here and Nowhere Else.</strong> </p>
+                                <p>Click The Color Blocks To Choose Black, Royal, Irish Green, Navy, and Dark Chocolate.</p>
+                                <p>Guaranteed safe and secure checkout via: <strong>Paypal - VISA - MASTERCARD</strong></p>
+                            </div>
+
+                            <div class="campaign-purchase">
+                                <div class="p-available">
+                                    <label>Available Products:</label>
+                                    <select name="" id="">
+                                        <option value="0">Classic Pullover Hoodie - $39.95 USD</option>
+                                        <option value="1">Classic Long Sleeve Tee - $29.95 USD</option>
+                                        <option value="2">Comfort Tee - $23.95 USD</option>
+                                    </select>
+                                </div>
+                                <div class="product-nav">
+                                    <ul>
+                                        <li>
+                                            <div class="wrap-img"><img src="images/thumb-mini.jpg" alt=""></div>
+                                        </li>
+                                        <li class="active-change">
+                                            <div class="wrap-img"><img src="images/thumb-mini.jpg" alt=""></div>
+                                        </li>
+                                        <li>
+                                            <div class="wrap-img"><img src="images/thumb-mini.jpg" alt=""></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="detail-option">
+                                    <label>Fit:</label>
+                                    <p>Regular fit, unisex</p>
+                                </div>
+
+                                <div class="show-more">
+                                    <a rel="open"><span>Show More Detail</span> <i class="fal fa-angle-down"></i></a>
+                                </div>
+
+                                <div class="detail-option detail-collspan">
+                                    <label>Fit:</label>
+                                    <p>Regular fit, unisex</p>
+                                    <label>Comparable Brands:</label>
+                                    <p>Gildan</p>
+                                </div>
+
+                                <div class="select-size">
+                                    <label>Select Size:</label>
+                                    <select name="" id="">
+                                        <option value="0">S</option>
+                                        <option value="1">M</option>
+                                        <option value="2">L</option>
+                                    </select>
+                                </div>
+                                <button class="buy-now">Buy it now</button>
+                            </div>
+
+                            <div class="timer-sale">
+                                <label>82 sold, available until <strong>Wednesday!</strong></label>
+
+                                <div class="main">
+                                    <div class="item">
+                                        <div class="title">03</div>
+                                        <label>days</label>
+                                    </div>
+                                    <div class="item">
+                                        <div class="title">11</div>
+                                        <label>Hours</label>
+                                    </div>
+                                    <div class="item">
+                                        <div class="title">54</div>
+                                        <label>Minutes</label>
+                                    </div>
+                                    <div class="item">
+                                        <div class="title">26</div>
+                                        <label>Seconds</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="p-description">
+                            <div class="step">
+                                <h2 class="title-s">Shipping Info</h2>
+                                <div class="p-content">
+                                    <p>All products are printed to order. </p>
+                                    <p>If you place your order now, it will ship on or before July 31, 2019.</p>
+                                    <p>Please allow additional 3 - 6 business days for standard shipping.</p>
+                                    <p>Expedited or Rush shipping may be available depending upon the product(s) selected and the destination country.</p>
+                                    <p>Shipping costs start at:</p>
+                                    <p>$3.99 for the first apparel item and $2.00 for each additional apparel item.</p>
+                                    <p>Products are fulfilled in the US</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="share-product">
+                            <p>Share this design!</p>
+                            <div class="list">
+                                <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+                                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page-product">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="title-categories">Recommendations for you</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-6">
+                        <div class="item-product">
+                            <div class="thumb">
+                                <a href="#"><img src="images/i1.jpg" alt=""></a>
+                            </div>
+                            <div class="info">
+                                <h2><a href="#">Abstract Galaxy</a></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <div class="item-product">
+                            <div class="thumb">
+                                <a href="#"><img src="images/i2.jpg" alt=""></a>
+                            </div>
+                            <div class="info">
+                                <h2><a href="#">Riots not Diets Phone Case</a></h2>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <div class="item-product">
+                            <div class="thumb">
+                                <a href="#"><img src="images/i3.jpg" alt=""></a>
+                            </div>
+                            <div class="info">
+                                <h2><a href="#">Camo Pattern iPhone Case</a></h2>
+                                <p>by Secret Service</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <div class="item-product">
+                            <div class="thumb">
+                                <a href="#"><img src="images/i4.jpg" alt=""></a>
+                            </div>
+                            <div class="info">
+                                <h2><a href="#">America The Brewtiful</a></h2>
+                                <p>by LAND OF THE FREE</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page-product">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="title-categories">Recommendations for you</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-6">
+                        <div class="item-product">
+                            <div class="thumb">
+                                <a href="#"><img src="images/i1.jpg" alt=""></a>
+                            </div>
+                            <div class="info">
+                                <h2><a href="#">Abstract Galaxy</a></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <div class="item-product">
+                            <div class="thumb">
+                                <a href="#"><img src="images/i2.jpg" alt=""></a>
+                            </div>
+                            <div class="info">
+                                <h2><a href="#">Riots not Diets Phone Case</a></h2>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <div class="item-product">
+                            <div class="thumb">
+                                <a href="#"><img src="images/i3.jpg" alt=""></a>
+                            </div>
+                            <div class="info">
+                                <h2><a href="#">Camo Pattern iPhone Case</a></h2>
+                                <p>by Secret Service</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <div class="item-product">
+                            <div class="thumb">
+                                <a href="#"><img src="images/i4.jpg" alt=""></a>
+                            </div>
+                            <div class="info">
+                                <h2><a href="#">America The Brewtiful</a></h2>
+                                <p>by LAND OF THE FREE</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page-product pd-bottom-50">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="title-categories">Recommendations for you</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-6">
+                        <div class="item-product">
+                            <div class="thumb">
+                                <a href="#"><img src="images/i1.jpg" alt=""></a>
+                            </div>
+                            <div class="info">
+                                <h2><a href="#">Abstract Galaxy</a></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <div class="item-product">
+                            <div class="thumb">
+                                <a href="#"><img src="images/i2.jpg" alt=""></a>
+                            </div>
+                            <div class="info">
+                                <h2><a href="#">Riots not Diets Phone Case</a></h2>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <div class="item-product">
+                            <div class="thumb">
+                                <a href="#"><img src="images/i3.jpg" alt=""></a>
+                            </div>
+                            <div class="info">
+                                <h2><a href="#">Camo Pattern iPhone Case</a></h2>
+                                <p>by Secret Service</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <div class="item-product">
+                            <div class="thumb">
+                                <a href="#"><img src="images/i4.jpg" alt=""></a>
+                            </div>
+                            <div class="info">
+                                <h2><a href="#">America The Brewtiful</a></h2>
+                                <p>by LAND OF THE FREE</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="no-homepage">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="footer-nav">
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Jobs</a></li>
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Security</a></li>
+                            <li><a href="#">Track Order</a></li>
+                            <li><a href="#">Training Center</a></li>
+                            <li class="help"><a href="#">Help</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="switcher-language">
+                        <select name="" id="">
+                            <option value="">English (USA)</option>
+                            <option value="">Español</option>
+                            <option value="">Italiano</option>
+                        </select>
+
+                        <a href="#" class="m-help">Help</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <p class="copyright">© 2019 Teespring, Inc.</p>
+                    <div class="social">
+                        <ul>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript" src="js/xzoom.min.js"></script>
+    <script type="text/javascript" src="hammer.js/1.0.5/jquery.hammer.min.js"></script>
+    <script type="text/javascript" src="fancybox/source/jquery.fancybox.js"></script>
+    <script type="text/javascript" src="magnific-popup/js/magnific-popup.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/setup.js"></script>
+
+</body></html>

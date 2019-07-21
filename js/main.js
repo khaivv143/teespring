@@ -125,14 +125,25 @@ $(window).on('resize scroll', function () {
     });
 });
 
-$('.button-name').on('click', function(){
+$('.button-name').on('click', function () {
     var role = $(this).attr('role');
     var wrapsite = $(this).parent().parent();
-    if(role == 'open'){
-        $(this).attr("role","close")
+    if (role == 'open') {
+        $(this).attr("role", "close")
         wrapsite.addClass("mini-width");
-    }else{
-        $(this).attr("role","open");
+    } else {
+        $(this).attr("role", "open");
         wrapsite.removeClass("mini-width");
     }
-})
+});
+
+$('.show-more a').on('click', function () {
+    var st_show = $(this).attr('rel');
+    if (st_show == 'open') {
+        $('.detail-collspan').show();
+        $(this).attr('rel', 'close');
+    } else {
+        $('.detail-collspan').hide();
+        $(this).attr('rel', 'open');
+    }
+});
